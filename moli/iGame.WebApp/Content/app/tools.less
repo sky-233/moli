@@ -1,0 +1,199 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-10 17:12:57
+    描述：工具
+*/
+
+
+@import "../module/_variable";
+
+.analyzer {
+    .form-group {
+        .control-label {
+        }
+    }
+
+    input {
+        -moz-box-shadow: unset;
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+    }
+
+    button {
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+
+    .analyzer-form {
+        .form-group {
+            .input-group-btn {
+                button {
+                    padding-left: .2rem;
+                    padding-right: .2rem;
+                }
+            }
+        }
+    }
+}
+
+.pet-info {
+
+    .media-right {
+        text-align: center;
+
+        > a {
+            width: 1rem;
+            position: relative;
+            display: block;
+            text-align: center;
+            min-height: .5rem;
+            font-size: .5rem;
+            color: @primary;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                max-width: 1rem;
+            }
+        }
+
+        p {
+            padding: .05rem 0;
+            color: #bbb;
+            font-size: .12rem;
+        }
+    }
+}
+
+.attrCount {
+    padding: .05rem 0;
+    background-color: #f2f2f2;
+}
+
+
+.tools-preview {
+    background-color: rgba(238, 217, 188, 0.8);
+    max-height: 2rem;
+}
+
+.analyzer-tab, .analyzer-result {
+    .analyzer-pagination, .analyzer-result-pagination {
+        width: 100%;
+
+        .swiper-pagination-bullet {
+            margin: 0;
+            padding: .05rem 0;
+            width: 100%/2;
+            border-radius: 0;
+            text-align: center;
+            height: auto;
+            background-color: @secondary;
+            color: #fff;
+            opacity: 1;
+
+            &.swiper-pagination-bullet-active {
+                background-color: @secondary - #222;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/*底部菜单*/
+.navBar-tools {
+    li {
+        padding: .05rem .1rem;
+
+        > a {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+/*算档器，选择宠物*/
+
+.select-pet-container {
+    height: 100%;
+
+    .select-pet-cate {
+        width: 1rem;
+        .btnClose{
+            background-color:rgb(222, 145, 145);
+            color:#fff;
+        }
+    }
+}
+
+.select-pet-cate-list {
+    height: 100%;
+    overflow-y: auto;
+
+    > li {
+        height: .5rem;
+
+        + li {
+            > button {
+                border-top: .01rem solid @secondary - #222;
+            }
+        }
+
+        > button {
+            border: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: @secondary;
+
+            &.active {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.select-pet-list {
+    .row {
+        padding-top: .05rem;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .col-xs-6 {
+        padding: .1rem;
+
+        > a {
+            position: relative;
+            display: block;
+            
+            text-align: center;
+            background-color: #f4f4f4;
+            padding-top: 50%;
+            padding-bottom: 50%;
+            overflow: hidden;
+
+            img {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;border-radius: .05rem;
+            }
+
+            .select-pet-name {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: .05rem;
+                background-color: rgba(34, 34, 34, 0.8);
+                color: #fff;
+                font-size: .1rem;
+                border-radius: 0 0 .05rem .05rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-10 10:24:04
+    描述：登录注册
+*/
+@import "../module/_variable";
+
+/*登录*/
+
+.sign-form {
+    padding-top: .2rem;
+}
+
+.signbar {
+    margin-top: .2rem;
+    padding: .3rem .15rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: .05rem;
+
+    h2 {
+        color: #bbb;
+    }
+
+    .input-group-custom {
+        .input-group{
+            border-bottom:.02rem dashed @primary;
+        }
+        .input-group-addon {
+            padding: 0;
+            border-color: transparent;
+            background-color: transparent;
+            min-width: .3rem;
+            font-size: .2rem;
+            color: @primary;
+            border-radius:0;
+            .fa{
+                display:block;
+                line-height:0;
+            }
+        }
+
+        input {
+            background-color: transparent;
+            border: 0;
+            -moz-box-shadow: unset;
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+            color: #333;
+            border-radius: 0;
+
+            &:focus {
+                -moz-box-shadow: unset;
+                -webkit-box-shadow: unset;
+                box-shadow: unset;
+                background-color: @primary + #eee;
+                border-radius:.05rem .05rem 0 0 ;
+            }
+
+            &::-webkit-input-placeholder { /* WebKit browsers */
+                color: #bbb;
+            }
+
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color: #bbb;
+            }
+
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                color: #bbb;
+            }
+
+            &:-ms-input-placeholder { /* Internet Explorer 10+ */
+                color: #bbb;
+            }
+        }
+    }
+}
+
+.sign-footer {
+}
+/*注册*/
+.step {
+    padding: .2rem 0;
+
+    &-1, &-2 {
+        float: left;
+        width: 50%;
+        background-color: #ddd;
+        position: relative;
+        height: .02rem;
+
+        .content {
+            padding: .02rem .05rem;
+            text-align: center;
+            position: absolute;
+            top: -.1rem;
+            width: .7rem;
+            display: block;
+            background-color: #ddd;
+            border-radius: .05rem;
+            color: #bbb;
+        }
+
+        &.active {
+            background-color: @primary;
+
+            .content {
+                background-color: @primary;
+                color: #fff;
+            }
+        }
+    }
+
+    &-2 {
+        .content {
+            right: 0;
+        }
+    }
+}
+
+.third-login {
+    padding: .1rem 0;
+
+    a {
+        display: inline-block;
+        font-size: .2rem;
+        padding: .05rem .1rem;
+        border-radius: .05rem;
+    }
+}

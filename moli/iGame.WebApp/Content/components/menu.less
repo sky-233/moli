@@ -1,0 +1,55 @@
+﻿/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-9-14 00:00:10
+    描述：菜单，包括侧滑，显示隐藏的菜单
+*/
+@import "../module/_variable";
+
+//侧滑菜单
+.navMenu {
+    display: block;
+    position: fixed;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -moz-transform: translate(-100%,0);
+    -ms-transform: translate(-100%,0);
+    -o-transform: translate(-100%,0);
+    -webkit-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+
+    .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index:0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity:.5;
+    }
+}
+
+.navMenu.active {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.navMenu-wrap {
+    padding: .1rem;
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    width: 80vw;
+    background-color: @secondary;
+    overflow-y: auto;
+}

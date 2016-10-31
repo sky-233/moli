@@ -1,0 +1,200 @@
+﻿@{
+    ViewBag.Title = "任务详情";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-9">
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="@Url.Action("Misson","Home")">全部任务</a></li>
+            <li class="active">热门任务</li>
+        </ol>
+        <section class="mission-detail">
+            <div class="mission-info section">
+                <h3 class="section-title ">新的力量 <a href="#" class="btn-edit-data" title="修改数据">[ 数据有误？点我修改 ]</a></h3>
+                <table class="table table-bordered ml-table">
+                    <tbody>
+                        <tr>
+                            <td class="text-center" width="10%">
+                                任务类型
+                            </td>
+                            <td width="40%" class="pl10 pr10">时长/道具服任务</td>
+                            <td class="text-center" width=" 10%">
+                                俗称
+                            </td>
+                            <td class="pl10 pr10"></td>
+                        </tr>
+                        <tr>
+                            <td class="text-center ">
+                                所属地图
+                            </td>
+
+                            <td class="pl10 pr10">
+                                <a href="/Map/Detail/82317b23-572a-4f97-853f-38d94bf9209a?u=True">圣骑士营地</a>
+                            </td>
+                            <td class="text-center ">
+                                任务NPC
+                            </td>
+                            <td class="pl10 pr10">
+                                <a href="/Npc/Detail/afb635fb-cf1a-4b86-aaac-d982734888ed?u=True">物资管理官斑</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center ">建议等级</td>
+                            <td class="pl10 pr10">120级</td>
+                            <td class=" text-center ">可否重做</td>
+                            <td class="pl10 pr10">可重做</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center ">必要条件</td>
+                            <td class="pl10 pr10">完成《未来之塔》任务；持有【闪亮的勇者徽章】</td>
+                            <td class="text-center ">奖励物品</td>
+                            <td class="pl10 pr10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="section">
+                <h4 class="section-title">详情</h4>
+                <div class="mission-content">
+                    <p>1.<span style="font-family:宋体">前往圣骑士营地工房，持有【闪亮的勇气徽章】时与物资管理官斑（</span>15.26<span style="font-family:宋体">）对话，选“是”获得【物资调配委托书】。</span></p><p><span style="font-family:宋体">◆【闪亮的勇气徽章】获得方式参考《<a class="datatag" target="_blank" href="http://www.molibaike.com/Mission/Detail/2f831b81-13ef-428b-88ed-fca8be65b06c?u=True">未来之塔</a>》任务</span></p><p>2.<span style="font-family:宋体">夜晚前往圣骑士营地酒吧与茱莉（</span>24.20<span style="font-family:宋体">）对话，交出【物资调配委托书】获得【茱莉的发饰】。</span></p><p><strong style="color: rgb(255, 0, 0); line-height: 1.42857143;"><span style="font-family: 宋体;"><br></span></strong></p><p><strong style="color: rgb(255, 0, 0); line-height: 1.42857143;"><span style="font-family: 宋体;">时长服：</span></strong><br></p><p><span style="font-family:宋体">①</span>.<span style="font-family:宋体">前往肯吉罗岛（</span>400.500<span style="font-family:宋体">）处，通过传送石进入永恒牢狱。</span></p><p><span style="font-family:宋体">◆永恒牢狱为随机迷宫；魔物为</span>Lv.130~134<span style="font-family:宋体">失落的灵魂、迷茫的灵魂；战斗胜利后会随机掉落【天界金属碎片】。</span></p><p><span style="font-family:宋体">②</span>.<span style="font-family:宋体">寻找迷宫内随机出现的残留的思念并与之对话，获得【给茱莉的信】。</span></p><p><span style="font-family:宋体"></span></p><p style="white-space: normal;"><span style="color: rgb(0, 112, 192);"><strong><span style="font-family: 宋体;"><br></span></strong></span></p><p style="white-space: normal;"><span style="color: rgb(0, 112, 192);"><strong><span style="font-family: 宋体;">道具服：</span></strong></span></p><p style="white-space: normal;"><span style="font-family: 宋体;">①</span>.<span style="font-family: 宋体;">夜晚前往圣骑士营地酒吧与布莱伊德（</span>23.20<span style="font-family: 宋体;">）对话，获得【给茱莉的信】。</span></p><p><span style="line-height: 1.42857143;"><br></span></p><p><span style="line-height: 1.42857143;">3.</span><span style="line-height: 1.42857143; font-family: 宋体;">夜晚前往圣骑士营地酒吧与茱莉对话，交出【茱莉的发饰】、【给茱莉的信】获得【武器制作合同】。</span><br></p><p>4.<span style="font-family:宋体">前往圣骑士营地工房与物资管理官斑对话，交出【武器制作合同】获得【物资补给证】，任务完结。</span></p><p><span style="font-family:宋体">◆【物资补给证】推测为后续任务所需道具，暂时无用处</span></p><p><br></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section class="section">
+            <h3 class="section-title">
+                历史版本
+            </h3>
+            <ul class="list-side">
+                <li><a href="#" title="" class="toh"><span class="other">2015/5/31 14:43:58</span> 修涙特</a></li>
+                <li><a href="#" title=""><span class="other">2015/5/31 14:43:58</span> 修涙特</a></li>
+            </ul>
+        </section>
+        <section class="section mt30">
+            <h3 class="section-title">该任务攻略</h3>
+            <ul class="mission-cate">
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+            </ul>
+        </section>
+
+        <section class="section mt20 page-about page-about-article">
+            <h3 class="section-title">
+                <span class="fc-gray">相关文章</span>
+            </h3>
+            <ul class="list-text">
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">攻略</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">攻略</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">攻略</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">攻略</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">攻略</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+               
+            </ul>
+            <div class="text-center">
+                <a href="#" class="page-about-more" title="">
+                    查看更多
+                </a>
+            </div>
+        </section>
+
+        <section class="section mt20 page-about page-about-matching">
+            <h3 class="section-title">
+                <span class="fc-gray">相关组队</span>
+            </h3>
+            <ul class="list-text ">
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate " title="" target="_blank">任务</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate leveling" title="" target="_blank">练级</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate" title="" target="_blank">任务</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate leveling" title="" target="_blank">练级</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="toh">
+                        <a href="#" class="cate leveling" title="" target="_blank">练级</a>
+                        <a href="#" class="title" title="" target="_blank">
+                            新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-center pt10">
+                <a href="#" class="page-about-more" title="">
+                    查看更多
+                </a>
+            </div>
+        </section>
+
+
+    </div>
+</div>

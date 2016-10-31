@@ -1,0 +1,66 @@
+﻿/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 22:12:09
+    描述：按钮
+*/
+
+
+@import "_variable";
+
+
+a, button {
+    outline: none;
+
+    &:hover, &:focus {
+        color: @base;
+    }
+
+    &:active {
+        color: @primary;
+    }
+
+    .fc- {
+        &.gray {
+            &:hover, &:focus {
+                color: @base;
+            }
+        }
+    }
+
+    &.bg-primary {
+        background-color: @primary;
+        color: #fff;
+
+        &:hover, &:focus {
+        background-color: @primary;
+            color: #fff;
+        }
+
+        &:active {
+            color: darken(@primary,20%);
+        }
+    }
+
+    &.bg-secondary {
+        background-color: @secondary;
+        color: darken(@secondary,30%);
+
+        &:hover, &:focus {
+            color: darken(@secondary,30%);
+        }
+
+        &:active {
+        background-color: @secondary - #111;
+            color: darken(@secondary,30%);
+        }
+    }
+}
+
+
+.btn-clear {
+    color: rgb(180, 0, 0);
+
+    &:focus, &:hover {
+        color: rgb(216, 2, 2);
+    }
+}

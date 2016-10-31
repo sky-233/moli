@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "文章详情";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-9">
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="@Url.Action("Misson","Home")">攻略</a></li>
+            <li class="active">新的力量</li>
+        </ol>
+        <section class="mission-detail">
+            <div class="mission-info section">
+                <h3 class="section-title ">新的力量</h3>
+                <div class="mission-content">
+                    <p>1.<span style="font-family:宋体">前往圣骑士营地工房，持有【闪亮的勇气徽章】时与物资管理官斑（</span>15.26<span style="font-family:宋体">）对话，选“是”获得【物资调配委托书】。</span></p><p><span style="font-family:宋体">◆【闪亮的勇气徽章】获得方式参考《<a class="datatag" target="_blank" href="http://www.molibaike.com/Mission/Detail/2f831b81-13ef-428b-88ed-fca8be65b06c?u=True">未来之塔</a>》任务</span></p><p>2.<span style="font-family:宋体">夜晚前往圣骑士营地酒吧与茱莉（</span>24.20<span style="font-family:宋体">）对话，交出【物资调配委托书】获得【茱莉的发饰】。</span></p><p><strong style="color: rgb(255, 0, 0); line-height: 1.42857143;"><span style="font-family: 宋体;"><br></span></strong></p><p><strong style="color: rgb(255, 0, 0); line-height: 1.42857143;"><span style="font-family: 宋体;">时长服：</span></strong><br></p><p><span style="font-family:宋体">①</span>.<span style="font-family:宋体">前往肯吉罗岛（</span>400.500<span style="font-family:宋体">）处，通过传送石进入永恒牢狱。</span></p><p><span style="font-family:宋体">◆永恒牢狱为随机迷宫；魔物为</span>Lv.130~134<span style="font-family:宋体">失落的灵魂、迷茫的灵魂；战斗胜利后会随机掉落【天界金属碎片】。</span></p><p><span style="font-family:宋体">②</span>.<span style="font-family:宋体">寻找迷宫内随机出现的残留的思念并与之对话，获得【给茱莉的信】。</span></p><p><span style="font-family:宋体"></span></p><p style="white-space: normal;"><span style="color: rgb(0, 112, 192);"><strong><span style="font-family: 宋体;"><br></span></strong></span></p><p style="white-space: normal;"><span style="color: rgb(0, 112, 192);"><strong><span style="font-family: 宋体;">道具服：</span></strong></span></p><p style="white-space: normal;"><span style="font-family: 宋体;">①</span>.<span style="font-family: 宋体;">夜晚前往圣骑士营地酒吧与布莱伊德（</span>23.20<span style="font-family: 宋体;">）对话，获得【给茱莉的信】。</span></p><p><span style="line-height: 1.42857143;"><br></span></p><p><span style="line-height: 1.42857143;">3.</span><span style="line-height: 1.42857143; font-family: 宋体;">夜晚前往圣骑士营地酒吧与茱莉对话，交出【茱莉的发饰】、【给茱莉的信】获得【武器制作合同】。</span><br></p><p>4.<span style="font-family:宋体">前往圣骑士营地工房与物资管理官斑对话，交出【武器制作合同】获得【物资补给证】，任务完结。</span></p><p><span style="font-family:宋体">◆【物资补给证】推测为后续任务所需道具，暂时无用处</span></p><p><br></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center article-qr">
+            <div class="qr-alipay">
+                <div class="qr-title">
+                    支付宝打赏
+                </div>
+                <img src="~/Content/images/test/alipay_qr.jpg" />
+            </div>
+            <div class="qr-wechat">
+                <div class="qr-title">
+                    微信打赏
+                </div>
+                <img src="~/Content/images/test/wechat_qr.jpg" />
+            </div>
+            <p class="fc-gray">百科承诺，打赏所得全部归文章作者所有！</p>
+        </div>
+        <section class="section mt30">
+            <h4 class="section-title">评论</h4>
+            <div class="comments">
+                <div class="comments-form">
+                    <textarea rows="3" id="txtComment" placeholder="小帅哥快来玩儿啊~~"></textarea>
+                    <div class="list-table comments-from-control">
+                        <div class="pl10">
+                            <span id="commentCount">0</span>/500 <span id="longError" class="fc-red ml15 dn">你写太多了！(ノಠ益ಠ)ノ彡┻━┻</span>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" id="btnSubmitComment" class="btn bg-primary">发表</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments-list clearFix">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-3 item-userinfo">
+                                <div class="text-center">
+                                    <a href="#" title="" class="avatar">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                    </a>
+                                    <h4>
+                                        葬爱·污离
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="content">
+                                    一天，污离拿了一个哥哥不用了的旧手机上网，逛贴吧的时候看到了杀马特的照片——彩色爆炸头、低裆裤的年轻人。污离觉得很个性，让他想起了最喜欢的《如果我是DJ你会爱我吗》，觉着就应该是这个样子。
+                                </div>
+                                <div class="control">
+                                    <a href="#" title="回复♂他">回复TA</a>
+                                    <a href="#" title="引用">引用</a>
+                                    <a href="#" title="举报">举报</a>
+
+                                    @*本人显示*@
+                                    <a href="#" title="删除">删除</a>
+                                    @*管理员显示*@
+                                    <a href="#" title="删除">删除</a>
+                                    <a href="#" title="封禁">封禁</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-3">
+        <section class="section mt30">
+            <h3 class="section-title">该任务攻略</h3>
+            <ul class="mission-cate">
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+                <li><a href="#" title="">各等级封印卡贩售资料</a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        $('#txtComment').bind('input propertychange', function () {
+            var cc = $('#commentCount'),
+            bsc = $('#btnSubmitComment'),
+            error = $('#longError');
+            var this_length = $(this).val().length;
+            c_c.text(this_length);
+            if (this_length > 500) {
+                c_c.css({ 'color': 'red' });
+                bsc.attr('disabled', 'disabled');
+                error.fadeIn(100);
+            } else {
+                c_c.css({ 'color': '#333' });
+                bsc.removeAttr('disabled');
+                error.fadeOut(100);
+            }
+        });
+    })()
+</script>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="@ViewBag.Desc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    <section class="topbar clearfix">
+        <div class="container-fixed">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="@Url.Action("Index","Home")" title="">魔力百科</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index","Home")" title="">百科手机版</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index","Home")" title="">魔力宝贝贴吧</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">官方功能 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">魔力宝贝官网</a></li>
+                                <li><a href="#">官方论坛</a></li>
+                                <li><a href="#">游戏下载</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index","Home")" title="">意见反馈</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3 ">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="关键字搜索">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <ul class="nav nav-pills pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 个人中心</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 资料设置</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-off"></span> 退出登录</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-toggletype="toggle-side" data-togglebox="#myMsg" title=""><i class="glyphicon glyphicon-envelope"></i></a>
+                        </li>
+                        @*<li>
+                                <a href="javascript:void(0)" data-toggletype="toggle-side" data-togglebox="#quickEntry" title="">快捷入口</a>
+                            </li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside id="quickEntry" class="sideBar"></aside>
+    <aside id="myMsg" class="sideBar">
+        <p>邮件</p>
+    </aside>
+    <section id="headerPic" class="header-pic">
+        <a href="@Url.Action("Index","Home")" class="logo" title="魔力百科首页">
+
+            <img src="~/Content/images/basic/logo_bg.png" class="logo-bg"/>
+            <img src="~/Content/images/basic/logo_content.png" alt="魔力百科" class="logo-content" />
+        </a>
+        @*<a href="@Url.Action("Index","Home")" class="logo-hover" title="魔力百科首页"></a>*@
+    </section>
+    <div class="container-fixed">
+            @Html.Partial("_Nav")
+    </div>
+    <section class="container-fixed">
+       
+        <div id="main" class="main bg-white clearFix">
+            @RenderBody()
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fixed">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 ">
+                    <ul class="footer-nav">
+                        <li><a href="#" class="alink" title="" target="_blank">关于魔力百科</a></li>
+                        <li><a href="#" class="alink" title="" target="_blank">关于艾斯创网络科技</a></li>
+                        <li><a href="#" class="alink" title="" target="_blank">业务合作</a></li>
+                    </ul>
+                    <p class="pt10">
+                        &copy; CopyRight 2014 艾斯创网络科技 - <a href="http://www.miibeian.gov.cn/" class="fc-gray alink">桂ICP备14005763号-6</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-4 ">
+
+                    <h3>特别鸣谢：全体魔力宝贝玩家</h3>
+                    <p>所有资料来源于广大网友或者各大魔力资料站，本站所有图档等资料版权一一史克威尔艾尼克斯（中国）</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>

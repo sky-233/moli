@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "注册";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #footer.footer {
+        display: none;
+    }
+</style>
+<div class="signbar-wrap">
+    <div class="container ">
+        <div class="signbar">
+            <h2 class="text-center">
+                欢迎注册
+            </h2>
+            <div class="step clearfix">
+                <div class="step-1 active">
+                    <div class="content ">注册账号</div>
+                </div>
+                <div class="step-2">
+                    <div class="content">完成</div>
+                </div>
+            </div>
+            <div class="sign-form">
+                <form>
+                    <div class="form-group input-group-custom">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                            <input type="text" id="" class="form-control" placeholder="账号/手机号">
+                        </div>
+                    </div>
+                    <div class="form-group input-group-custom">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-lock"></span></span>
+                            <input type="password" class="form-control" placeholder="6~20位混合字符">
+                        </div>
+                    </div>
+                    <div class="form-group input-group-custom">
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="fa fa-envelope"></span></span>
+                            <input type="text" id="" class="form-control" placeholder="example@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group input-group-custom">
+                        <div class="row">
+
+                            <div class="col-xs-7">
+                                <input type="text" id="mCode" class="form-control" placeholder="验证码">
+                            </div><div class=" col-xs-5">
+                                <a href="#" class="btn btn-block bg-secondary">获取验证码</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <button type="button" id="btnSubmit" class="btn btn-block bg-primary">确认注册</button>
+                    </p>
+                </form>
+            </div>
+            <footer>
+                <div class="text-center pt10 third-login">
+                    <a href="#" class="bg-secondary"><i class="fa fa-qq"></i></a>
+                    <a href="#" class="bg-secondary"><i class="fa fa-wechat"></i></a>
+                </div>
+
+                <div class="text-center pt10">已有账号？<a href="@Url.Action("Login","Account")" title="注册">点击登录</a></div>
+            </footer>
+        </div>
+    </div>
+</div>

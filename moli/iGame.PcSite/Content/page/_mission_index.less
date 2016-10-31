@@ -1,0 +1,93 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-20 17:06:08
+    描述：任务列表页
+*/
+
+@import "../custom/_variable";
+
+.mission-list {
+    .item {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        border-top: 1px solid transparent;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+        &:hover {
+            border-top-color: @secondary;
+            border-bottom-color: @secondary;
+            background-color: @secondary + #666;
+
+            .item-title {
+                color: @secondary;
+            }
+        }
+
+        .item-title {
+            display: inline-block;
+            padding: 5px 0;
+            font-size: 18px;
+        }
+    }
+}
+
+.page-about {
+    &-article {
+        .list-text {
+            > li {
+                margin-bottom: 10px;
+
+                + li {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &-matching {
+        .list-text {
+            > li {
+                .cate {
+                    &.leveling {
+                        background-color: @primary;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: @primary + #111;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-about-more {
+    display: inline-block;
+    padding: 5px 30px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #eee;
+    color: #ccc;
+}
+
+
+.mission-info {
+    padding: 20px 0;
+
+    .ml-table {
+        td {
+            &:nth-child(2n-1) {
+                background-color: @secondary;
+                color: @secondary - #444;
+            }
+        }
+    }
+}
+
+.mission-content {
+    padding: 30px 0;
+}

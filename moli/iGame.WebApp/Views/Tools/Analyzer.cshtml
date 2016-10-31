@@ -1,0 +1,414 @@
+﻿@{
+    ViewBag.Title = "宠物算档器";
+    ViewBag.PageName = ViewBag.Title;
+    ViewBag.LeftTop = "tools";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section id="toolsResult" class="toggle-page  tools-preview toggle-hide">
+    <div class="analyzer-result swiper-container swiper-container-horizontal">
+        <div class="analyzer-result-pagination swiper-pagination-clickable swiper-pagination-bullets">
+            <span class="swiper-pagination-bullet swiper-pagination-bullet-active">加点</span>
+            <span class="swiper-pagination-bullet">基础</span>
+        </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active">
+                <section class="pl15 pr15 pt10">
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>0</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>体</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>力</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>防</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>敏</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>魔</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="swiper-slide swiper-slide-next">
+                <section class="pl15 pr15 pt20"></section>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" analyzer">
+    <section class="container pet-info ">
+        <div class="media">
+            <div class="media-body form-horizontal">
+                <div class="form-group">
+                    <label for="input-level" class="col-xs-4 control-label npr">等级</label>
+                    <div class="col-xs-8">
+                        <div class="input-group input-group-tools input-group-sm text-center">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                            </span>
+                            <input id="input-level" required="required" type="number" class="form-control text-center pl5 pr5" placeholder="0">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-4 control-label npr">种族</label>
+                    <div class="col-xs-8">
+                        <label class="form-control-static">种族</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-xs-4 control-label npr">最高档位</label>
+                    <div class="col-xs-8">
+                        <label class="form-control-static">25 23 23 23 26</label>
+                    </div>
+                </div>
+            </div>
+            <div class="media-right media-middle">
+                <a href="javascript:void(0);" data-togglebox="ChoosePetList" data-toggletype="page">
+                    <i class="fa fa-plus"></i>
+                    <img src="~/Content/images/test/example.jpg" />
+                </a>
+                <p>点击选择宠物</p>
+
+                <section id="ChoosePetList" data-bodyscroll="no" class="toggle-page toggle-hide select-pet">
+                    <div class="list-justified select-pet-container">
+                        <div class="select-pet-cate">
+                            <ul class="select-pet-cate-list">
+                                <li><button type="button" class="btnClose"><span class="glyphicon glyphicon-chevron-left"></span> 不选了</button></li>
+                                <li><button type="button" class="active">全部</button></li>
+                                <li><button type="button" class="">野兽系</button></li>
+                                <li><button type="button" class="">特殊系</button></li>
+                                <li><button type="button" class="">不死系</button></li>
+                                <li><button type="button" class="">金属系</button></li>
+                                <li><button type="button" class="">龙系</button></li>
+                                <li><button type="button" class="">昆虫系</button></li>
+                                <li><button type="button" class="">人形系</button></li>
+                                <li><button type="button" class="">植物系</button></li>
+                                <li><button type="button" class="">飞行系</button></li>
+                                <li><button type="button" class="">邪魔系</button></li>
+                            </ul>
+                        </div>
+                        <div class="ver-top select-pet-list">
+                            <div class="row nm">
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="javascript:void(0);">
+                                        <img src="~/Content/images/test/avatar.jpg" />
+                                        <span class="db toh select-pet-name">变种欧特奇美拉变种欧特奇美拉</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="attrCount clearfix">
+        <div class="form-group ">
+            <label for="input-attrCount" class=" col-xs-4 control-label">未分配点数</label>
+            <div class="col-xs-8">
+                <input type="number" class="form-control" id="input-attrCount" placeholder="0">
+            </div>
+        </div>
+    </section>
+    <div class="form-horizontal analyzer-form">
+        <div class="analyzer-tab swiper-container swiper-container-horizontal">
+            <div class="analyzer-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active">加点</span>
+                <span class="swiper-pagination-bullet">基础</span>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                    <section class="container pt20">
+                        <div class="form-group">
+                            <label for="input-physical" class="col-xs-3 control-label">体力</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-tools input-group-sm  text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-tili" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-power" class="col-xs-3 control-label">力量</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-power" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-strength" class="col-xs-3 control-label">强度</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-strength" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-speed" class="col-xs-3 control-label">速度</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-speed" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-magic" class="col-xs-3 control-label">魔法</label>
+                            <div class="col-xs-9">
+                                <div class="input-group  input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-magic" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide swiper-slide-next">
+                    <section class="container pt20">
+                        <div class="form-group">
+                            <label for="input-physical" class="col-xs-3 control-label">血量</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-tools input-group-sm  text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-tili" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-power" class="col-xs-3 control-label">魔力</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-power" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-strength" class="col-xs-3 control-label">攻击力</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-strength" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-speed" class="col-xs-3 control-label">防御值</label>
+                            <div class="col-xs-9">
+                                <div class="input-group input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-speed" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-magic" class="col-xs-3 control-label">敏捷值</label>
+                            <div class="col-xs-9">
+                                <div class="input-group  input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-magic" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-magic" class="col-xs-3 control-label">精神</label>
+                            <div class="col-xs-9">
+                                <div class="input-group  input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-magic" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-magic" class="col-xs-3 control-label">回复</label>
+                            <div class="col-xs-9">
+                                <div class="input-group  input-group-sm input-group-tools text-center">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                    </span>
+                                    <input id="input-magic" required="required" type="number" class="form-control text-center" placeholder="0">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="navBar-bottom navBar-tools">
+    <ul>
+        <li><a href="javascript:void(0);" class="btn bg-primary btn-xs"><span class="fa fa-check"></span> 计算</a></li>
+        <li><a href="javascript:void(0);" class="btn btn-danger btn-xs"><span class="fa fa-remove"></span> 清空</a></li>
+    </ul>
+</section>
+
+<script src="~/Scripts/app/tools.analyzer.js"></script>

@@ -1,0 +1,84 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-19 10:49:57
+    描述：个人中心
+*/
+
+@import "../module/_variable";
+
+.my-header {
+    padding: .1rem;
+    background-color: @secondary;
+
+    .my-header-avatar {
+        a {
+            display: inline-block;
+            border: .01rem solid @secondary - #222;
+            padding: .02rem;
+            border-radius: .05rem;
+
+            img {
+                width: .6rem;
+                border-radius: .05rem;
+            }
+        }
+    }
+
+    .media-body {
+        .media-heading {
+            color: @secondary - #555;
+        }
+
+        .lv {
+            color: @secondary - #444;
+        }
+    }
+}
+
+.my-operation {
+    .btn {
+        border-radius: 0;
+        background-color: @secondary - #222;
+        color: #fff;
+
+        &:active {
+            background-color: @secondary;
+        }
+    }
+}
+
+.my-menu {
+    .grid-avg {
+        li {
+            padding: 0;
+            border-bottom: .01rem solid #ddd;
+            border-left: .01rem solid #ddd;
+
+            &:nth-child(3n-2) {
+                border-left: 0;
+            }
+
+            a {
+                padding: 0;
+                height: 100/3vw;
+                line-height: 100/3vw;
+
+                &:active {
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+}
+
+
+.my-article-list {
+    .item {
+        padding: .1rem;
+        background-color: #f2f2f2;
+        border-radius:.04rem;
+        + .item {
+            margin-top: .1rem;
+        }
+    }
+}

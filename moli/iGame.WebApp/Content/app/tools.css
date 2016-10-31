@@ -1,0 +1,153 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-10 17:12:57
+    描述：工具
+*/
+.analyzer input {
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+.analyzer button:focus,
+.analyzer button:active {
+  outline: none;
+}
+.analyzer .analyzer-form .form-group .input-group-btn button {
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+.pet-info .media-right {
+  text-align: center;
+}
+.pet-info .media-right > a {
+  width: 1rem;
+  position: relative;
+  display: block;
+  text-align: center;
+  min-height: .5rem;
+  font-size: .5rem;
+  color: #00c8b1;
+}
+.pet-info .media-right > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1rem;
+}
+.pet-info .media-right p {
+  padding: .05rem 0;
+  color: #bbb;
+  font-size: .12rem;
+}
+.attrCount {
+  padding: .05rem 0;
+  background-color: #f2f2f2;
+}
+.tools-preview {
+  background-color: rgba(238, 217, 188, 0.8);
+  max-height: 2rem;
+}
+.analyzer-tab .analyzer-pagination,
+.analyzer-result .analyzer-pagination,
+.analyzer-tab .analyzer-result-pagination,
+.analyzer-result .analyzer-result-pagination {
+  width: 100%;
+}
+.analyzer-tab .analyzer-pagination .swiper-pagination-bullet,
+.analyzer-result .analyzer-pagination .swiper-pagination-bullet,
+.analyzer-tab .analyzer-result-pagination .swiper-pagination-bullet,
+.analyzer-result .analyzer-result-pagination .swiper-pagination-bullet {
+  margin: 0;
+  padding: .05rem 0;
+  width: 50%;
+  border-radius: 0;
+  text-align: center;
+  height: auto;
+  background-color: #eed9bc;
+  color: #fff;
+  opacity: 1;
+}
+.analyzer-tab .analyzer-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-result .analyzer-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-tab .analyzer-result-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-result .analyzer-result-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ccb79a;
+  color: #fff;
+}
+/*底部菜单*/
+.navBar-tools li {
+  padding: .05rem .1rem;
+}
+.navBar-tools li > a {
+  display: block;
+  text-align: center;
+}
+/*算档器，选择宠物*/
+.select-pet-container {
+  height: 100%;
+}
+.select-pet-container .select-pet-cate {
+  width: 1rem;
+}
+.select-pet-container .select-pet-cate .btnClose {
+  background-color: #de9191;
+  color: #fff;
+}
+.select-pet-cate-list {
+  height: 100%;
+  overflow-y: auto;
+}
+.select-pet-cate-list > li {
+  height: .5rem;
+}
+.select-pet-cate-list > li + li > button {
+  border-top: 0.01rem solid #ccb79a;
+}
+.select-pet-cate-list > li > button {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #eed9bc;
+}
+.select-pet-cate-list > li > button.active {
+  background-color: #fff;
+}
+.select-pet-list .row {
+  padding-top: .05rem;
+  height: 100%;
+  overflow-y: auto;
+}
+.select-pet-list .col-xs-6 {
+  padding: .1rem;
+}
+.select-pet-list .col-xs-6 > a {
+  position: relative;
+  display: block;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.select-pet-list .col-xs-6 > a img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: .05rem;
+}
+.select-pet-list .col-xs-6 > a .select-pet-name {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .05rem;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  font-size: .1rem;
+  border-radius: 0 0 .05rem .05rem;
+}
+/*# sourceMappingURL=tools.css.map */

@@ -1,0 +1,244 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-17 10:40:41
+    描述：匹配系统
+*/
+@import "../custom/_variable";
+//队友颜色
+@teammate-1: #f2cb84;
+@teammate-2: #97ccff;
+@teammate-3: #6ed991;
+@teammate-4: #d1adff;
+@teammate-5: #ffafec;
+@btn-join: #97ccff;
+@btn-join-leveling: #f1c701;
+@btn-detail: @secondary;
+
+.match-screen{
+    background-color:#ddd;
+    padding:10px;
+}
+.match {
+    background-color: #fff;
+    padding: 15px;
+
+    .match-item {
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #eee;
+        border: 1px solid transparent;
+        height: 285px;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+        &:hover {
+            border: 1px solid #0c63c2;
+            background-color:rgba(12, 99, 194, 0.1);
+        }
+
+        .match-title {
+            padding-bottom: 5px;
+            color: #0c63c2;
+            font-weight: bold;
+
+            small {
+                padding: 0 3px;
+                background-color: #0c63c2;
+                color: #fff;
+                margin-right: 10px;
+                border-radius: 4px;
+            }
+        }
+
+        .content {
+            margin-bottom: 10px;
+            padding: 5px 0;
+            color: #bbb;
+            height: 45px;
+            overflow-y: hidden;
+        }
+
+        [class*="btn-match-"] {
+            font-weight: bold;
+        }
+
+        .btn-match-join {
+            background-color: @btn-join;
+            color: @btn-join - #555;
+
+            &:hover {
+                background-color: @btn-join - #111;
+            }
+        }
+
+        .btn-match-detail {
+            background-color: @btn-detail;
+            color: @btn-detail - #555;
+
+            &:hover {
+                background-color: @btn-detail - #111;
+            }
+        }
+
+        .teammate-group {
+            height: 130px;
+
+            > .item {
+                margin-top: 5px;
+                padding: 0 10px 0 0;
+                border-radius: 4px;
+                background-color: #fff;
+                position: relative;
+
+                &.ready {
+
+                    &:after {
+                        content: "√";
+                        position: absolute;
+                        right: 0;
+                        display: inline-block;
+                        width: 20px;
+                        line-height: 20px;
+                        color: #fff;
+                        font-size: 12px;
+                        text-align: center;
+                        text-shadow: 1px 1px 1px #000;
+                    }
+                }
+
+                &:before {
+                    display: inline-block;
+                    width: 20px;
+                    line-height: 20px;
+                    color: #fff;
+                    text-shadow: 1px 1px 1px #000;
+                    font-size: 12px;
+                    text-align: center;
+                }
+
+                &.captain {
+                    border: 1px solid @teammate-1;
+
+                    &.ready {
+                        background-color: @teammate-1 + #333;
+
+                        &:after {
+                            background-color: @teammate-1;
+                        }
+                    }
+
+                    &:before {
+                        content: "队";
+                        background-color: @teammate-1;
+                    }
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid @teammate-2;
+
+                    &.ready {
+                        background-color: @teammate-2 + #333;
+
+                        &:after {
+                            background-color: @teammate-2;
+                        }
+                    }
+
+                    &:before {
+                        content: "2";
+                        background-color: @teammate-2;
+                    }
+                }
+
+                &:nth-child(3) {
+                    border: 1px solid @teammate-3;
+
+                    &:before {
+                        content: "3";
+                        background-color: @teammate-3;
+                    }
+
+                    &.ready {
+                        background-color: @teammate-3 + #333;
+
+                        &:after {
+                            background-color: @teammate-3;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    border: 1px solid @teammate-4;
+
+                    &:before {
+                        content: "4";
+                        background-color: @teammate-4;
+                    }
+
+                    &.ready {
+                        background-color: @teammate-4 + #333;
+
+                        &:after {
+                            background-color: @teammate-4;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    border: 1px solid @teammate-5;
+
+                    &:before {
+                        content: "5";
+                        background-color: @teammate-5;
+                    }
+
+                    &.ready {
+                        background-color: @teammate-5 + #333;
+
+                        &:after {
+                            background-color: @teammate-5;
+                        }
+                    }
+                }
+
+                > span {
+                    margin-left: 10px;
+                    color: #bbb;
+                    font-size: 12px;
+
+                    b {
+                        color: @base;
+                    }
+                }
+            }
+        }
+
+        &.match-leveling {
+            &:hover {
+                border: 1px solid #b17700;
+                background-color: rgba(177, 119, 0, 0.1);
+            }
+
+            .match-title {
+                color: #b17700;
+
+                small {
+                    background-color: #b17700;
+                }
+            }
+
+            .btn-match-join {
+                background-color: @btn-join-leveling;
+                color: @btn-join-leveling - #555;
+
+                &:hover {
+                    background-color: @btn-join-leveling - #111;
+                }
+            }
+        }
+    }
+}

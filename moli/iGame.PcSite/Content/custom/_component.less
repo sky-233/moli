@@ -1,0 +1,312 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-14 00:02:11
+    描述：组件，多个单控件组合
+*/
+
+@import "_control";
+
+//清除浮动,使用方法：直接在该元素后新增空白元素并使用class
+.clear {
+    clear: both;
+}
+//可以在需要清楚浮动的元素后添加伪元素，使用方法：直接在该元素使用class
+.clearFix {
+    zoom: 1; //解决ie6/7兼容问题
+    &:after {
+        clear: both;
+        display: block;
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+        content: '';
+    }
+}
+
+
+
+//等分网格
+.grid-avg {
+    .clearFix;
+
+    > li {
+        float: left;
+    }
+
+    &.grid-avg-3 {
+        > li {
+            width: 100%/3;
+
+            > a {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//滚动条
+.scrollBar {
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb {
+        border-radius: 999px;
+        border: 5px solid transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: 1px 1px 5px rgba(255,255,255,.5) inset;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        min-height: 20px;
+        -moz-background-clip: content-box;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+        box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+
+//模块公共样式
+
+.section {
+    //标题
+    .section-title {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        position: relative;
+        color: @primary;
+        font-weight: bold;
+
+        a.more {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 4px 4px 0 0;
+            padding: 0 5px;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 1.5em;
+            background-color: #ddd;
+
+            &:hover {
+                background-color: @primary;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+//模拟table，实现同一行左右模式，常用在文章标题列表，其中有纯文字和带图列表
+.list-table {
+    display: table;
+    width: 100%;
+
+    > div, > span {
+        display: table-cell;
+    }
+
+    &.list-table- {
+        &middle {
+            > div, > span {
+                vertical-align: middle;
+            }
+        }
+
+        &top {
+            > div, > span {
+                vertical-align: top;
+            }
+        }
+
+        &bottom {
+            > div, > span {
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+
+
+.list-text {
+
+    .cate {
+        background-color: @secondary;
+        padding: 1px 3px;
+        border-radius: 4px;
+        color: @secondary - #777;
+
+        &:hover {
+            background-color: @secondary - #222;
+        }
+    }
+
+    .title {
+        .time {
+            color: #bbb;
+        }
+    }
+}
+
+ul.list-text {
+
+    li {
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+
+        + li {
+            margin-top: 10px;
+        }
+    }
+}
+
+.rounded {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/*文章作者信息*/
+.author {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+
+    .author-avatar {
+        width: 48px;
+
+        a {
+            display: block;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.list-side {
+    li {
+        a {
+            display: block;
+            padding: 5px 10px;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            zoom: 1;
+
+            &:after {
+                clear: both;
+                display: block;
+                visibility: hidden;
+                height: 0;
+                line-height: 0;
+                content: '';
+            }
+
+            &:hover {
+                color: @secondary;
+                border-top-color: @secondary;
+                border-bottom-color: @secondary;
+            }
+
+            .other {
+                padding-left: 10px;
+                float: right;
+                color: #ccc;
+            }
+        }
+    }
+}
+
+/*通用评论*/
+.comments-form {
+    textarea {
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: @comments-txtbox-bg;
+        border-radius: 5px 5px 0 0;
+        padding: 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .comments-from-control {
+        background-color: @comments-txtbox-bg - #111;
+        border-radius: 0 0 5px 5px;
+
+        button {
+            padding-left:20px;
+            padding-right:20px;
+            border-radius: 0 0 5px 0;
+        }
+    }
+}
+
+
+.comments-list {
+    padding: 20px 0;
+
+    .item {
+        .item-userinfo {
+        }
+
+        .avatar {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+
+/*打赏*/
+.article-qr {
+    padding: 20px 0;
+    border-bottom: 2px dashed #ddd;
+}
+
+.qr-alipay, .qr-wechat {
+    padding: 10px 20px 20px 20px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+        border-radius: 5px;
+    }
+
+    .qr-title {
+        color: #fff;
+    }
+}
+
+.qr-alipay {
+    background-color: #009fe7;
+    margin-right: 20px;
+}
+
+.qr-wechat {
+    background-color: #2bad13;
+}

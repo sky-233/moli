@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07454443-ABE0-4AD6-ACE5-1B519C871FAE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iGame.WebApp</RootNamespace>
+    <AssemblyName>iGame.WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\app\article.css">
+      <DependentUpon>article.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\article.min.css">
+      <DependentUpon>article.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\home.css">
+      <DependentUpon>home.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\home.min.css">
+      <DependentUpon>home.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\layout.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\layout.min.css">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\my.css">
+      <DependentUpon>my.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\my.min.css">
+      <DependentUpon>my.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\sign.css">
+      <DependentUpon>sign.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\sign.min.css">
+      <DependentUpon>sign.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\tools.css">
+      <DependentUpon>tools.less</DependentUpon>
+    </Content>
+    <Content Include="Content\app\tools.min.css">
+      <DependentUpon>tools.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\components\avg.css">
+      <DependentUpon>avg.less</DependentUpon>
+    </Content>
+    <Content Include="Content\components\avg.min.css">
+      <DependentUpon>avg.css</DependentUpon>
+    </Content>
+    <Content Include="Content\components\menu.css">
+      <DependentUpon>menu.less</DependentUpon>
+    </Content>
+    <Content Include="Content\components\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
+    <Content Include="Content\components\nav.css">
+      <DependentUpon>nav.less</DependentUpon>
+    </Content>
+    <Content Include="Content\components\nav.min.css">
+      <DependentUpon>nav.css</DependentUpon>
+    </Content>
+    <Content Include="plugins\layer\layer.js" />
+    <Content Include="plugins\layer\need\layer.css" />
+    <Content Include="plugins\swiperbox\swipebox.css" />
+    <Content Include="plugins\swiperbox\swipebox.min.css">
+      <DependentUpon>swipebox.css</DependentUpon>
+    </Content>
+    <Content Include="plugins\swiper\swiper.css" />
+    <Content Include="plugins\swiper\swiper.min.css">
+      <DependentUpon>swiper.css</DependentUpon>
+    </Content>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css">
+      <DependentUpon>font-awesome.css</DependentUpon>
+    </Content>
+    <Content Include="Content\images\account\signBg.jpg" />
+    <Content Include="Content\images\basic\loading.gif" />
+    <Content Include="Content\images\basic\logo.png" />
+    <Content Include="Content\images\basic\logo_120x80.png" />
+    <Content Include="Content\images\basic\pic.png" />
+    <Content Include="Content\images\basic\text.png" />
+    <Content Include="Content\images\test\avatar.jpg" />
+    <Content Include="Content\images\test\example.jpg" />
+    <Content Include="Content\images\test\header_bg.jpg" />
+    <Content Include="Content\basic.css">
+      <DependentUpon>basic.less</DependentUpon>
+    </Content>
+    <Content Include="Content\basic.min.css">
+      <DependentUpon>basic.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\app\article.detail.js" />
+    <Content Include="Scripts\app\account.js" />
+    <Content Include="Scripts\app\article.index.js" />
+    <Content Include="Scripts\app\home.index.min.js">
+      <DependentUpon>home.index.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\app\layout.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\config.js" />
+    <Content Include="Scripts\bootstrap.min.js">
+      <DependentUpon>bootstrap.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\config.min.js">
+      <DependentUpon>config.js</DependentUpon>
+    </Content>
+    <Content Include="plugins\swiperbox\jquery.swipebox.js" />
+    <Content Include="plugins\swiperbox\jquery.swipebox.min.js">
+      <DependentUpon>jquery.swipebox.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js">
+      <DependentUpon>jquery-1.9.1.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\rem.js" />
+    <Content Include="Scripts\rem.min.js">
+      <DependentUpon>rem.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\require.js" />
+    <Content Include="Scripts\require.min.js">
+      <DependentUpon>require.js</DependentUpon>
+    </Content>
+    <Content Include="plugins\swiper\swiper.jquery.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticleController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyController.cs" />
+    <Compile Include="Controllers\StoreController.cs" />
+    <Compile Include="Controllers\ToolsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\require.min.js.map">
+      <DependentUpon>require.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\bootstrap.min.js.map">
+      <DependentUpon>bootstrap.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.min.js.map">
+      <DependentUpon>jquery-1.9.1.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\app\home.index.js" />
+    <Content Include="Content\module\_button.less" />
+    <Content Include="Content\module\_components.less" />
+    <Content Include="Content\module\_input.less" />
+    <Content Include="Content\module\_public.less" />
+    <Content Include="Content\module\_reset.less" />
+    <Content Include="Content\module\_custom_bt.less" />
+    <Content Include="Content\basic.less" />
+    <Content Include="Content\app\tools.less" />
+    <Content Include="Content\app\article.less" />
+    <Content Include="Content\app\home.less" />
+    <Content Include="Content\app\layout.less" />
+    <Content Include="Content\app\my.less" />
+    <Content Include="Content\app\sign.less" />
+    <Content Include="Content\module\_variable.less" />
+    <Content Include="plugins\swiperbox\jquery.swipebox.min.js.map">
+      <DependentUpon>jquery.swipebox.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\config.min.js.map">
+      <DependentUpon>config.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\app\home.index.min.js.map">
+      <DependentUpon>home.index.min.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\rem.min.js.map">
+      <DependentUpon>rem.min.js</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Views\Article\Index.cshtml" />
+    <Content Include="Views\Shared\_article_category.cshtml" />
+    <Content Include="Content\app\article.css.map">
+      <DependentUpon>article.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\home.css.map">
+      <DependentUpon>home.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\layout.css.map">
+      <DependentUpon>layout.css</DependentUpon>
+    </Content>
+    <Content Include="Content\basic.css.map">
+      <DependentUpon>basic.css</DependentUpon>
+    </Content>
+    <Content Include="Views\Article\Detail.cshtml" />
+    <Content Include="Content\app\tools.css.map">
+      <DependentUpon>tools.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\sign.css.map">
+      <DependentUpon>sign.css</DependentUpon>
+    </Content>
+    <Content Include="Content\app\my.css.map">
+      <DependentUpon>my.css</DependentUpon>
+    </Content>
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\RegisterOver.cshtml" />
+    <Content Include="Views\Account\Forget.cshtml" />
+    <Content Include="Views\Tools\Simulation.cshtml" />
+    <Content Include="Views\Tools\Analyzer.cshtml" />
+    <Content Include="Views\Tools\EQsimulator.cshtml" />
+    <Content Include="Scripts\app\tools.analyzer.js" />
+    <Content Include="Content\components\nav.less" />
+    <Content Include="Content\components\nav.css.map">
+      <DependentUpon>nav.css</DependentUpon>
+    </Content>
+    <Content Include="Content\components\menu.less" />
+    <Content Include="Content\components\menu.css.map">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
+    <Content Include="Content\components\avg.less" />
+    <Content Include="Content\components\avg.css.map">
+      <DependentUpon>avg.css</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\images\home\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\My\" />
+    <Folder Include="Views\Store\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7552</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7552/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

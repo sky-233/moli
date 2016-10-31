@@ -1,0 +1,194 @@
+﻿/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-7-31 14:31:43
+    描述：首页样式
+*/
+
+@import "../custom/_variable";
+@hello-txtbox-bg: #f2f2f2;
+
+/*首页轮播*/
+.main-slider {
+    .item {
+        a {
+            display: block;
+            height: 300px;
+            overflow: hidden;
+
+
+            img {
+                position: relative;
+                max-width: unset;
+                width: 100%;
+                -moz-transition: all 1s;
+                -o-transition: all 1s;
+                -webkit-transition: all 1s;
+                transition: all 1s;
+            }
+        }
+
+        &.active {
+            > a {
+
+                &:hover {
+                    > img {
+                        width: 150%;
+                        -moz-transform: rotate(15deg) translateX(-15%) translateY(-20%);
+                        -ms-transform: rotate(15deg) translateX(-15%) translateY(-20%);
+                        -o-transform: rotate(15deg) translateX(-15%) translateY(-20%);
+                        -webkit-transform: rotate(15deg) translateX(-15%) translateY(-20%);
+                        transform: rotate(15deg) translateX(-15%) translateY(-20%);
+                    }
+                }
+            }
+        }
+    }
+
+    .item-title {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .carousel-indicators {
+        right: 10px;
+        bottom: 5px;
+        width: auto;
+        left: unset;
+        margin-left: unset;
+    }
+}
+
+.hello-from {
+    textarea {
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: @hello-txtbox-bg;
+        border-radius: 5px 5px 0 0;
+        padding: 5px 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .hello-from-control {
+        background-color: @hello-txtbox-bg - #222;
+        border-radius: 0 0 5px 5px;
+
+        button {
+            width: 30%;
+            border-radius: 0 0 5px 0;
+        }
+    }
+}
+
+.hello-list {
+    .item {
+        margin: 0;
+        padding-top: 10px;
+
+        .media-heading {
+            margin: 0;
+            font-size: 1.6px;
+        }
+
+        .hello-avatar {
+            display: block;
+            height: 48px;
+            width: 48px;
+            overflow: hidden;
+
+            img {
+                width: 48px;
+                height: 48px;
+                border-radius: 5px;
+            }
+        }
+
+        .hello-info {
+            padding: 5px 0;
+            color: #ccc;
+        }
+
+        + .item {
+            border-top: 1px dashed #ccc;
+        }
+    }
+}
+
+
+.task-list {
+    background-color: #f5edd4;
+    padding: 10px 10px 0 0;
+
+    a {
+        margin-bottom: 10px;
+        border: 1px solid #ddc896;
+        margin-left: 10px;
+        color: #b49855;
+
+        &:hover {
+            background-color: #ddc896;
+        }
+    }
+}
+
+
+.index-thinks {
+    margin-top: 20px;
+
+    .section-title {
+        padding-top: 0;
+    }
+
+    a.list-table {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: 5px;
+        color: #fff;
+        background-color: @primary;
+        border: 2px solid transparent;
+
+        &:hover {
+            background-color: #fff;
+            color: @primary;
+            border: 2px solid @primary;
+        }
+
+        > span {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        .fa-qq {
+            font-size: 20px;
+        }
+
+        .qq-num {
+            text-align: right;
+            font-size: 20px;
+        }
+    }
+
+    .tieba-link {
+        display: block;
+        border-radius: 5px;
+
+        &:hover {
+            -moz-box-shadow: 0 0 5px @primary;
+            -webkit-box-shadow: 0 0 5px @primary;
+            box-shadow: 0 0 5px @primary;
+        }
+    }
+
+    .thinks-text {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px dashed #fff;
+    }
+}

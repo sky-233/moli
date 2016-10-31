@@ -1,0 +1,38 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-19 16:04:11
+    描述：全局样式
+*/
+
+//基础的重置
+@import "module/_reset";
+
+//框架
+@import url('font-awesome.min.css');
+@import url('bootstrap.min.css');
+
+//自定义模块
+@import "module/_custom_bt";
+@import "module/_components";
+
+@import "components/nav";
+@import "components/menu";
+@import "components/avg";
+
+
+//扩展插件的样式
+@import url('../plugins/swiper/swiper.css');
+
+//页面样式
+@import "app/layout";
+@import "app/home";
+@import "app/article";
+@import "app/tools";
+@import "app/sign";
+@import "app/my";
+
+
+
+
+//公共样式，放在最后，用于覆盖
+@import "module/_public";

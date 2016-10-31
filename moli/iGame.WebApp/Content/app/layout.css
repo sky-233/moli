@@ -1,0 +1,47 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 11:28:13
+    描述：仅用于layout的样式
+*/
+body {
+  font-family: 'Microsoft YaHei';
+}
+.sign-bar .avatar {
+  display: block;
+  border-radius: 5px;
+  border: 5px solid #fff;
+  background-color: #fff;
+}
+.sign-bar .avatar img {
+  width: 100%;
+  border-radius: 5px;
+}
+.footer {
+  margin-top: .2rem;
+  padding: .1rem 0;
+  color: #bbb;
+  font-size: .12rem;
+}
+.main {
+  padding-top: .1rem;
+}
+.gotop {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: .05rem;
+  bottom: .5rem;
+  width: .4rem;
+  height: .4rem;
+  line-height: .4rem;
+  font-size: .2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}
+.gotop:hover,
+.gotop:focus {
+  color: #fff;
+}
+/*# sourceMappingURL=layout.css.map */

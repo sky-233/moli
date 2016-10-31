@@ -1,0 +1,59 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-31 14:54:34
+    描述：物品
+*/
+@import "../custom/_variable";
+
+.item-list {
+    .item {
+        background: #f2f2f2 url('../images/basic/logo_bg.png') no-repeat -30px center;
+        background-size: 100px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        overflow-x: hidden;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+        &:hover {
+            border-color: @primary;
+
+            
+
+            .item-img {
+                -moz-transform: rotateY(360deg);
+                -ms-transform: rotateY(360deg);
+                -o-transform: rotateY(360deg);
+                -webkit-transform: rotateY(360deg);
+                transform: rotateY(360deg);
+            }
+        }
+
+        .item-title {
+            color: @primary;
+            &:hover{
+                color:@secondary;
+            font-weight: bold;
+            }
+        }
+
+        .item-img {
+            display: block;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+            -webkit-transition: all 1s;
+            transition: all 1s;
+        }
+
+        .media-body {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}

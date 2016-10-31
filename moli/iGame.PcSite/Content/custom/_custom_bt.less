@@ -1,0 +1,186 @@
+﻿/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-6-26 15:17:58
+    描述：自定义bootstrap的样式，直接修改或者在原基础添加一个新class
+*/
+
+
+@import "_variable";
+
+.container-fixed {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.navbar-white-border {
+    min-height: unset;
+    background-color: @nav-bg;
+    border: 0;
+    border-bottom: 1px solid @nav-border;
+    margin-bottom: 0;
+
+    .navbar-nav {
+        > li {
+            > a {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: @base;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                -webkit-transition: all .2s;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: @primary;
+                    color: contrast(@primary);
+                }
+            }
+        }
+
+        > .dropdown {
+            > a {
+                &:hover {
+                    .dropdown-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .dropdown > a:hover .dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.slide {
+    position: relative;
+}
+//首页slider的滚动导航按钮样式
+.right-indicators {
+    right: 10px;
+    bottom: 5px;
+    margin-bottom: unset;
+    margin-left: unset;
+    left: unset;
+    width: auto;
+}
+//通用的slider滚动导航按钮样式
+.slider-indicators {
+    margin: 0;
+    top: 0;
+    right: 0;
+    left: unset;
+    width: auto;
+
+    li {
+        margin: 0;
+        width: 20px;
+        height: 5px;
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+
+        &.active {
+            width: 3em;
+            background-color: @primary + #222;
+            height: 5px;
+        }
+    }
+}
+
+
+//面板
+.panel-moli {
+    border-radius: 0;
+
+    .panel-heading {
+        padding: 0;
+        border-bottom: 4px solid @primary;
+        position: relative;
+
+        label {
+            background-color: @primary;
+            padding: 7px 5px 3px 7px;
+            color: #fff;
+            border-radius: 0 10px 0 0;
+        }
+
+        .panel-title-more {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+        }
+    }
+
+    .panel-body {
+        padding: 0;
+        border-radius: 0;
+        border: 1px solid #ddd;
+        border-top: 0;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+
+        &:hover {
+            -moz-box-shadow: 0 2px 2px #ccc;
+            -webkit-box-shadow: 0 2px 2px #ccc;
+            box-shadow: 0 2px 2px #ccc;
+        }
+    }
+}
+
+//轮播
+.main-slider {
+    .item-title {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        width: 100%;
+        padding: 5px 10px;
+        color: #fff;
+    }
+}
+
+/*输入组*/
+.input-group {
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+
+    .form-control {
+        border: 0;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+
+        &:focus {
+            background-color: #f4f4f4;
+        }
+    }
+
+    .input-group-btn {
+        .btn {
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+.tab-content {
+    > .tab-pane {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+    }
+}

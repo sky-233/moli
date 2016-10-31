@@ -1,0 +1,68 @@
+﻿<nav id="mainNavbar" class="main-navbar-wrap">
+    <div id="subContainer" class="npl">
+        <ul class="main-navbar clearFix">
+            <li><a href="@Url.Action("Index","Home")">首页</a></li>
+            <li>
+                <a href="javascript:;">新手必读</a>
+                <ul class="sub-nav">
+                    <li><a href="#">魔力各服区别表</a></li>
+                    <li><a href="#">怀旧服练级指南</a></li>
+                    <li><a href="#">道具服练级指南</a></li>
+                    <li><a href="#">魔力常用词解释</a></li>
+                    <li><a href="#">怀旧服各线用途</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="@Url.Action("Index","Article")">文章</a>
+                @*<ul class="sub-nav">
+                        <li><a href="" title="">心情文章</a></li>
+                        <li><a href="@Url.Action("Index", "Article")" title="">游戏攻略</a></li>
+                    </ul>*@
+            </li>
+            <li>
+                <a href="javascript:;">游戏数据库</a>
+                <ul class="sub-nav">
+                    <li><a title="任务" href="@Url.Action("Index", "Mission")">任务</a></li>
+                    <li><a title="角色" href="@Url.Action("Index", "Role")">角色</a></li>
+                    <li><a title="地图" href="@Url.Action("Index","Map")">地图</a></li>
+                    <li><a title="怪物" href="@Url.Action("Index", "Monster")">怪物</a></li>
+                    <li><a title="职业" href="@Url.Action("Index", "Profession")">职业</a></li>
+                    <li><a title="NPC" href="@Url.Action("Index","NPC")">NPC</a></li>
+                    <li><a title="物品" href="@Url.Action("Index", "Item")">物品</a></li>
+                    <li><a title="装备" href="@Url.Action("Index", "Equipment")">装备</a></li>
+                    <li><a title="任务技能" href="@Url.Action("Index", "Skill")">人物技能</a></li>
+                    <li><a title="宠物技能" href="@Url.Action("Index", "MonsterSkill")">宠物技能</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Trading")">魔易所</a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="Mini_openWindow('@Url.Action("Chat", "Home")', '百科聊天Beta v 1.0', 'width=320,height=700,resizable=no,location=no,top=0,left=0')">聊天室</a>
+            </li>
+            <li class="pull-right">
+                <a href="javascript:;">常用工具</a>
+                <ul class="sub-nav">
+                    <li><a class="btn" href="javascript:void(0);" onclick="Mini_openWindow('@Url.Action("Simulation", "Tools")', '宠物算档器', 'width=320,height=700')">宠物算档器</a></li>
+                    <li><a class="btn" href="javascript:void(0);" onclick="Mini_openWindow('@Url.Action("Analyzer", "Tools")', '宠物算档器', 'width=320,height=630')">宠物模拟器</a></li>
+                    <li>
+                        <a href="@Url.Action("EQsimulator", "Tools")" title=" 装备模拟器">装备模拟器</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="pull-right">
+                <a href="@Url.Action("Index","Announcement")">魔力动态</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script type="text/javascript">
+
+    function Mini_openWindow(theURL, winName, features) { //v2.0
+        window.open(theURL, winName, features);
+    }
+
+</script>

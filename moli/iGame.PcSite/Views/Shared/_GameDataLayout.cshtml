@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="@ViewBag.Desc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/rem.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="npt">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-12 data-side">
+                <div class="data-side-header">
+                   
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="关键字搜索……">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <aside class="data-side-menubar">
+                    <ul class="data-side-menubar-menu">
+                        <li>
+                            <a href="#" title="" class="active">物品</a>
+                            <ul>
+                                <li><a href="#" title="">武器</a></li>
+                                <li><a href="#" title="">防具</a></li>
+                                <li><a href="#" title="">道具</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-10 col-sm-9 data-main">
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+
+    <script src="~/Scripts/main.js"></script>
+
+</body>
+</html>

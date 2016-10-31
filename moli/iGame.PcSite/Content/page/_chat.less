@@ -1,0 +1,236 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-22 18:39:41
+    描述：聊天
+*/
+
+@import "../custom/_variable";
+
+.chat {
+    //margin-right: -22px;
+    .btn-group {
+        &:first-child {
+            button {
+                border-left: 0;
+            }
+        }
+
+        &:last-child {
+            button {
+                border-right: 0;
+            }
+        }
+    }
+
+    button {
+        border-radius: 0;
+
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+}
+
+.chat-tab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    > li {
+        width: 100%/4;
+        border-bottom: 1px solid #ccc;
+
+        &.active {
+            a {
+                background-color: @primary;
+                border: 0;
+                color: #fff;
+                pointer-events: none;
+
+                &:focus {
+                    border: 0;
+                    background-color: @primary;
+                    color: #fff;
+                }
+            }
+        }
+
+        a {
+            position:relative;
+            background-color: #fff;
+            display: block;
+            font-size: 12px;
+            border-radius: 0;
+            border: 0;
+            text-align: center;
+            .new-notice{
+                position:absolute;
+                left:0;
+                top:3px;
+                display:inline-block;
+                border-radius:5px;
+                background-color:red;
+                color:#fff;
+                padding:0 5px;
+                font-size:10px;
+            }
+        }
+    }
+    /*
+        注释内容为按钮tab的样式
+    */
+    /*.btn-group {
+        + .btn-group {
+            button {
+                border-left:1px solid #ccc;
+            }
+        }
+    }
+
+    button {
+        border-radius: 0;
+        border-top: 0;
+
+        &.active {
+            background-color: @primary;
+            color: #fff;
+
+            &:hover {
+                background-color: @primary;
+                color: #fff;
+            }
+        }
+    }*/
+}
+.chat-tab-content{
+    padding-left:10px;
+    padding-top:40px;
+    overflow-y:auto;
+    padding-right:10px;
+    overflow-x:hidden;
+}
+.chat-content {
+    padding-right:10px;
+
+    .chating-item {
+        padding: 20px 0;
+
+        &.my-message {
+
+            .title {
+                color: red;
+
+                .title-badge {
+                    display: inline-block;
+                    padding: 0 5px;
+                    background-color: @secondary;
+                    color: #fff;
+                }
+            }
+        }
+
+        + .chating-item {
+            border-top: 1px dashed #ccc;
+        }
+
+        .title {
+            padding-bottom: 10px;
+            color: @primary;
+
+            .title-badge {
+                display: inline-block;
+                padding: 0 5px;
+                background-color: @primary + #555;
+                color: #fff;
+            }
+            a{
+                &:hover{
+                    color:@secondary;
+                }
+            }
+        }
+    }
+}
+
+.chat-control {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+
+    .list-table {
+        width: 100%;
+    }
+}
+
+.chat-expand {
+    .btn-group {
+        button {
+            border-bottom: 0;
+        }
+
+        + .btn-group {
+            button {
+                border-left: 0;
+            }
+        }
+    }
+
+    .btn-group-xs {
+
+        button {
+            border-radius: 0;
+            border-bottom: 0;
+        }
+    }
+}
+
+.chat-txtbox {
+    padding: 10px;
+    border-top: 1px solid @primary;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    width: 100%;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    &:focus {
+        outline: 0;
+        background-color: @secondary + #555;
+    }
+}
+
+.chat-btn {
+    width: 60px;
+
+    .chat-btn-submit {
+        height: 61px;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+
+
+.chat-info {
+    padding: 3px 10px;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.tip-error {
+    padding: 5px 10px;
+    background-color: #f16767;
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    top: 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+}

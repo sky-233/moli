@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8ABE00DA-8246-4EEE-A7BF-C5C310F01010}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iGame.PcSite</RootNamespace>
+    <AssemblyName>iGame.PcSite</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\images\basic\body_bg.png" />
+    <Content Include="Content\images\basic\btn_tieba.png" />
+    <Content Include="Content\images\basic\header_bg.png" />
+    <Content Include="Content\images\basic\logo.png" />
+    <Content Include="Content\images\basic\logo_bg.png" />
+    <Content Include="Content\images\basic\logo_content.png" />
+    <Content Include="Content\images\basic\navbar_top_bg.png" />
+    <Content Include="Content\images\paopao\01.png" />
+    <Content Include="Content\images\paopao\02.png" />
+    <Content Include="Content\images\paopao\03.png" />
+    <Content Include="Content\images\paopao\04.png" />
+    <Content Include="Content\images\paopao\05.png" />
+    <Content Include="Content\images\paopao\06.png" />
+    <Content Include="Content\images\paopao\07.png" />
+    <Content Include="Content\images\paopao\08.png" />
+    <Content Include="Content\images\paopao\09.png" />
+    <Content Include="Content\images\paopao\10.png" />
+    <Content Include="Content\images\paopao\11.png" />
+    <Content Include="Content\images\paopao\12.png" />
+    <Content Include="Content\images\paopao\13.png" />
+    <Content Include="Content\images\paopao\14.png" />
+    <Content Include="Content\images\paopao\15.png" />
+    <Content Include="Content\images\paopao\16.png" />
+    <Content Include="Content\images\paopao\17.png" />
+    <Content Include="Content\images\paopao\18.png" />
+    <Content Include="Content\images\paopao\19.png" />
+    <Content Include="Content\images\paopao\20.png" />
+    <Content Include="Content\images\paopao\21.png" />
+    <Content Include="Content\images\paopao\22.png" />
+    <Content Include="Content\images\paopao\23.png" />
+    <Content Include="Content\images\paopao\24.png" />
+    <Content Include="Content\images\paopao\25.png" />
+    <Content Include="Content\images\paopao\26.png" />
+    <Content Include="Content\images\paopao\27.png" />
+    <Content Include="Content\images\paopao\28.png" />
+    <Content Include="Content\images\paopao\29.png" />
+    <Content Include="Content\images\paopao\30.png" />
+    <Content Include="Content\images\paopao\31.png" />
+    <Content Include="Content\images\paopao\32.png" />
+    <Content Include="Content\images\paopao\33.png" />
+    <Content Include="Content\images\paopao\34.png" />
+    <Content Include="Content\images\paopao\35.png" />
+    <Content Include="Content\images\test\avatar.jpg" />
+    <Content Include="Content\images\test\chat_bg.jpg" />
+    <Content Include="Content\images\test\item.png" />
+    <Content Include="Content\images\test\item_1.png" />
+    <Content Include="Content\images\test\match_bg.jpg" />
+    <Content Include="Content\images\test\match_bg_1.jpg" />
+    <Content Include="Content\images\test\alipay_qr.jpg" />
+    <Content Include="Content\images\test\banner.jpg" />
+    <Content Include="Content\images\basic\header_ads.jpg" />
+    <Content Include="Content\images\test\bg_man.png" />
+    <Content Include="Content\images\test\bg_man_lg.jpg" />
+    <Content Include="Content\images\test\header_bg.jpg" />
+    <Content Include="Content\images\test\logo.png" />
+    <Content Include="Content\images\test\main_slide.jpg" />
+    <Content Include="Content\images\nav\sub-nav-data.jpg" />
+    <Content Include="Content\images\nav\sub-nav-goods.jpg" />
+    <Content Include="Content\images\nav\sub-nav-map.jpg" />
+    <Content Include="Content\images\nav\sub-nav-pet.jpg" />
+    <Content Include="Content\images\nav\sub-nav-profession.jpg" />
+    <Content Include="Content\images\nav\sub-nav-role.jpg" />
+    <Content Include="Content\images\nav\sub-nav-skill.jpg" />
+    <Content Include="Content\images\test\wechat_qr.jpg" />
+    <Content Include="Content\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\rem.js" />
+    <Content Include="Scripts\rem.min.js">
+      <DependentUpon>rem.js</DependentUpon>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Content\site.less" />
+    <Content Include="Content\basic\_public.less" />
+    <Content Include="Content\basic\_reset.less" />
+    <Content Include="Content\custom\_variable.less" />
+    <Content Include="Content\custom\_component.less" />
+    <Content Include="Content\custom\_control.less" />
+    <Content Include="Content\custom\_custom_bt.less" />
+    <Content Include="Content\page\_home_index.less" />
+    <Content Include="Content\page\_layout.less" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\NpcList.cshtml" />
+    <Content Include="Views\Home\NpcDetail.cshtml" />
+    <Content Include="Views\Home\ItemList.cshtml" />
+    <Content Include="Views\Home\Matching.cshtml" />
+    <Content Include="Content\page\_match_index.less" />
+    <Content Include="Content\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Views\Home\Mission.cshtml" />
+    <Content Include="Content\page\_mission_index.less" />
+    <Content Include="Views\Home\MissionDetail.cshtml" />
+    <Content Include="Views\Home\ArticleDetail.cshtml" />
+    <Content Include="Content\page\_article.less" />
+    <Content Include="Views\Home\Chat.cshtml" />
+    <Content Include="Views\Shared\_Nav.cshtml" />
+    <Content Include="Views\Shared\_BlankLayout.cshtml" />
+    <Content Include="Content\page\_chat.less" />
+    <Content Include="Scripts\rem.min.js.map">
+      <DependentUpon>rem.min.js</DependentUpon>
+    </Content>
+    <Content Include="Views\Shared\_GameDataLayout.cshtml" />
+    <Content Include="Content\page\_game_data_layout.less" />
+    <Content Include="Content\page\_item.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3453</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3453/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

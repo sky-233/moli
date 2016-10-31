@@ -1,0 +1,241 @@
+﻿@{
+    ViewBag.Title = "首页";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-8 col-sm-8 col-xs-12">
+        <section id="mainSlide" class="carousel slide main-slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slide" data-slide-to="1"></li>
+                <li data-target="#main-slide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="#">
+                        <img src="~/Content/images/test/banner.jpg" />
+                    </a>
+                    <div class="item-title ">标题标题</div>
+                </div>
+                <div class="item ">
+                    <a href="#">
+                        <img src="~/Content/images/test/banner.jpg" />
+                    </a>
+                    <div class="item-title ">标题标题</div>
+
+                </div>
+                <div class="item ">
+                    <a href="#"><img src="~/Content/images/test/banner.jpg" /></a>
+                    <div class="item-title ">标题标题</div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section mt15 pb15">
+            <h3 class="section-title">魔易新品 <a href="@Url.Action("Index","Trading")" class="more" title="查看更多">更多</a></h3>
+            <ul class="list-text">
+                <li class="toh">
+                    <a href="" class="cate mr10" title="" target="_blank">
+                        怀旧牧羊
+                    </a>
+                    <a href="#" class="title" title="" target="_blank">
+                        <span class="fc-red">【出售】</span> 超低价出售567重装，成本价格的七五折卖
+                    </a>
+                </li>
+                <li class="toh">
+                    <a href="" class="cate mr10" title="" target="_blank">
+                        怀旧牧羊
+                    </a>
+                    <a href="#" class="title" title="" target="_blank">
+                        <span class="fc-green">【求购】</span> 超低价出售567重装，成本价格的七五折卖超低价出售567重装，成本价格的七五折卖超低价出售567重装，成本价格的七五折卖
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <section class="section mt15 pb15">
+                    <h3 class="section-title">热点文章 <a href="#" class="more" target="_blank" title="查看更多">更多</a></h3>
+                    <ul class="list-text">
+                        <li class="toh">
+                            <a href="#" class="cate" title="" target="_blank">攻略</a>
+                            <a href="#" class="title" title="" target="_blank">
+                                新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <section class="section mt15">
+                    <h3 class="section-title">最新动态 <a href="#" class="more" target="_blank" title="查看更多">更多</a></h3>
+                    <ul class="list-text">
+                        <li class="toh">
+                            <a href="#" class="cate" title="" target="_blank">攻略</a>
+                            <a href="#" class="title" title="" target="_blank">
+                                <span class="time">【08-31】</span> 新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                            </a>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <section class="section mt15">
+            <div class="panel panel-warning nmb">
+                <div class="panel-body task-list">
+                    <a href="#" class="btn btn-sm" title="" target="_blank">
+                        半山任务
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section mt15 pb15">
+            <h3 class="section-title">热门任务 <a href="#" class="more" title="查看更多">更多</a></h3>
+            <ul class="list-text">
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="toh">
+                                <a href="#" class="cate" title="" target="_blank">经典任务</a>
+                                <a href="#" class="title" title="" target="_blank">
+                                    新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">建议等级：<span class="fc-red">40</span></div>
+                        <div class="col-md-2 text-right">重做：<span class="fa fa-check fc-red"></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="toh">
+                                <a href="#" class="cate" title="" target="_blank">经典任务</a>
+                                <a href="#" class="title" title="" target="_blank">
+                                    新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">建议等级：<span class="fc-red">40</span></div>
+                        <div class="col-md-2 text-right">重做：<span class="fa fa-check fc-red"></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="toh">
+                                <a href="#" class="cate" title="" target="_blank">经典任务</a>
+                                <a href="#" class="title" title="" target="_blank">
+                                    新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">建议等级：<span class="fc-red">40</span></div>
+                        <div class="col-md-2 text-right">重做：<span class="fa fa-check fc-red"></span></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="toh">
+                                <a href="#" class="cate" title="" target="_blank">经典任务</a>
+                                <a href="#" class="title" title="" target="_blank">
+                                    新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">建议等级：<span class="fc-red">40</span></div>
+                        <div class="col-md-2 text-right">重做：<span class="fa fa-check fc-red"></span></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <section class="section">
+            <h3 class="section-title">通知 <a href="#" class="more" title="查看更多">更多</a></h3>
+            <ul class="list-t   ext">
+                <li class="toh">
+                    <a href="#" class="cate" title="" target="_blank">攻略</a>
+                    <a href="#" class="title" title="" target="_blank">
+                        <span class="time">【08-31】</span> 新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽新闻标题一定要够长才能爽
+                    </a>
+                </li>
+            </ul>
+        </section>
+        @*<section class="section pt10">
+                <h3 class="section-title">贡献榜 <a href="#" class="more" title="查看更多">更多</a></h3>
+                <table class="table table-hover table-striped nmb">
+                    <thead>
+                        <tr>
+                            <th>排名</th>
+                            <th>会员名</th>
+                            <th>贡献</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#" title="" target="_blank">Username</a></td>
+                            <td>29292929229</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>*@
+
+        <section class="section index-thinks">
+            <h3 class="section-title">特别鸣谢</h3>
+            <div class="thinks-text">
+                衷心感谢广大魔力宝贝的玩家的支持和努力，才有了今天的魔力百科站。
+            </div>
+            <div class="pt20">
+                <a href="http://tieba.baidu.com/f?kw=%C4%A7%C1%A6%B1%A6%B1%B4" class="tieba-link" title="进入魔力宝贝(贴吧)" target="_blank">
+                    <img src="~/Content/images/basic/btn_tieba.png" />
+                </a>
+            </div>
+            <div class="mt20">
+                <h4>怀旧服玩家群</h4>
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=04060dbec52ce5b2d42a7d05b6cc4922ca8cef55f77c0451c75311e40a462993" class="list-table" title="点击加入“魔力--追寻曾经的回忆”QQ群">
+                    <span>
+                        <span class="fa fa-qq fa-fw "></span> 魔力--追寻曾经的回忆
+                    </span>
+                    <span class="qq-num">
+                        487043716
+                    </span>
+                </a>
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=571b7f10d16bc6145b7b7432d151cc3f3badb9f3ccfaf62063e00e6619326346" class="list-table" title="点击加入“牧羊丿小窝”QQ群">
+                    <span>
+                        <span class="fa fa-qq fa-fw"></span> 牧羊丿小窝
+                    </span>
+                    <span class="qq-num">
+                        161720343
+                    </span>
+                </a>
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=47cb66c0c790972b0c9a34dba504f175fa66950ef57cfd5cb0c9e8b6ce705244" class="list-table" title="点击加入“魔力宝贝（怀旧牧羊）”QQ群">
+                    <span>
+                        <span class="fa fa-qq fa-fw "></span> 魔力宝贝（怀旧牧羊）
+                    </span>
+                    <span class="qq-num">
+                        177340140
+                    </span>
+                </a>
+            </div>
+            <div class="mt20">
+                <h4>道具服玩家群</h4>
+                <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=4e5193ebbbea1d93510d77eb7366934be7a7a43b4f3ae0f40cd1d7e654d8ab0b" class="list-table" title="点击加入“魔力道具网通大神群”QQ群">
+                    <span>
+                        <span class="fa fa-qq fa-fw "></span> 魔力道具网通大神群
+                    </span>
+                    <span class="qq-num">
+                        2325635
+                    </span>
+                </a>
+            </div>
+        </section>
+    </div>
+</div>

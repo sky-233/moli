@@ -1,0 +1,131 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/app/home.min.css" rel="stylesheet" />
+
+<section class="sliderbar">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="~/Content/images/test/header_bg.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="~/Content/images/test/header_bg.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="~/Content/images/test/header_bg.jpg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<div class="section-hot pb15">
+    <ul class="nav nav-tabs nav-tabs-justified nav-tabs-primary " role="tablist">
+        <li role="presentation" class="active"><a href="#hot" aria-controls="hot" role="tab" data-toggle="tab">热点</a></li>
+        <li role="presentation"><a href="#notice" aria-controls="notice" role="tab" data-toggle="tab">通知</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="hot">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="~/Content/images/basic/text.png" />
+                    </a>
+                </div>
+                <div class="media-body ">
+                    <div class="media-heading toh"><a href="@Url.Action("Detail","Article")">《索奇亚古文明调查》任务剧情对话 </a></div>
+                    <div class="media-info toh">
+                        <span><i class="glyphicon glyphicon-user"></i> <a href="#">Usernaem</a></span>
+                        <span><i class="fa fa-clock-o"></i> 2016-8-8 14:16:55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="~/Content/images/basic/text.png" width="48" />
+                    </a>
+                </div>
+                <div class="media-body ">
+                    <div class="media-heading toh"><a href="@Url.Action("Detail","Article")">《索奇亚古文明调查》任务剧情对话 </a></div>
+                    <div class="media-info toh">
+                        <span><i class="glyphicon glyphicon-user"></i> <a href="#">Usernaem</a></span>
+                        <span><i class="fa fa-clock-o"></i> 2016-8-8 14:16:55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="~/Content/images/basic/text.png" width="48" />
+                    </a>
+                </div>
+                <div class="media-body ">
+                    <div class="media-heading toh"><a href="@Url.Action("Detail","Article")">《索奇亚古文明调查》任务剧情对话 </a></div>
+                    <div class="media-info toh">
+                        <span><i class="glyphicon glyphicon-user"></i> <a href="#">Usernaem</a></span>
+                        <span><i class="fa fa-clock-o"></i> 2016-8-8 14:16:55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="~/Content/images/basic/text.png" width="48" />
+                    </a>
+                </div>
+                <div class="media-body ">
+                    <div class="media-heading toh"><a href="@Url.Action("Detail","Article")">《索奇亚古文明调查》任务剧情对话 </a></div>
+                    <div class="media-info toh">
+                        <span><i class="glyphicon glyphicon-user"></i> <a href="#">Usernaem</a></span>
+                        <span><i class="fa fa-clock-o"></i> 2016-8-8 14:16:55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="~/Content/images/basic/text.png" width="48" />
+                    </a>
+                </div>
+                <div class="media-body ">
+                    <div class="media-heading toh"><a href="@Url.Action("Detail","Article")">《索奇亚古文明调查》任务剧情对话 </a></div>
+                    <div class="media-info toh">
+                        <span><i class="glyphicon glyphicon-user"></i> <a href="#">Usernaem</a></span>
+                        <span><i class="fa fa-clock-o"></i> 2016-8-8 14:16:55</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane " id="notice">
+            <ul class="list-group article-list">
+                <li class="list-group-item toh">
+                    <a href="@Url.Action("Detail","Article")">
+                        【2016-8-8】 110级巫格大连证110级巫格大连证(1680！最后一降)
+                    </a>
+                </li>
+                <li class="list-group-item toh">
+                    <a href="@Url.Action("Detail","Article")">
+                        【2016-8-8】 110级巫格大连证110级巫格大连证(1680！最后一降)
+                    </a>
+                </li>
+                <li class="list-group-item toh">
+                    <a href="@Url.Action("Detail","Article")">
+                        【2016-8-8】  110级巫格大连证110级巫格大连证(1680！最后一降)
+                    </a>
+                </li>
+                <li class="list-group-item toh">
+                    <a href="@Url.Action("Detail","Article")">
+                        【2016-8-8】 110级巫格大连证110级巫格大连证(1680！最后一降)
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/app/home.index.js"></script>

@@ -1,0 +1,83 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-10-14 00:01:39
+    描述：a，button，input等单个控件
+*/
+
+
+@import "_variable";
+
+.btn-border-dashed {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px dashed #ccc;
+    color: #808080;
+}
+
+a {
+    color: @primary;
+
+    &:hover {
+        color: @primary;
+    }
+}
+
+.alink {
+    color: @secondary;
+
+    &:hover {
+        color: @secondary - #555;
+    }
+}
+
+.bg- {
+    &primary {
+        background-color: @primary;
+    }
+
+    &secondary {
+        background-color: @secondary;
+    }
+
+    &third {
+        background-color: @third;
+    }
+}
+
+a, button {
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+
+    &.bg-primary {
+        color: #fff;
+
+        &:hover, &:focus {
+            background-color: @primary - #222;
+            color: contrast(@primary);
+            -moz-box-shadow: unset;
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+            outline: none;
+        }
+    }
+    &.bg-secondary {
+        color: #fff;
+
+        &:hover, &:focus {
+            background-color: @secondary  - #222;
+            color: #fff;
+            -moz-box-shadow: unset;
+            -webkit-box-shadow: unset;
+            box-shadow: unset;
+            outline: none;
+        }
+    }
+}
+
+/*修改数据按钮*/
+.btn-edit-data {
+    font-size: 14px;
+    color: @secondary;
+}

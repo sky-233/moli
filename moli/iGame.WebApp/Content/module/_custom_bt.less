@@ -1,0 +1,175 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-19 01:00:32
+    描述：因bootstrap未使用rem，此文件重定义bootstrap的样式
+*/
+
+@import "_variable";
+
+.container {
+    padding-right: .15rem;
+    padding-left: .15rem;
+}
+
+.row {
+    margin-left: -.15rem;
+    margin-right: -.15rem;
+
+    &.row-fluid {
+        > [class*="col-"] {
+            padding:0;
+        }
+    }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: .15rem;
+    padding-left: .15rem;
+}
+
+.form-control {
+    height: .3rem;
+    border-radius: .04rem;
+    font-size: .14rem;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: @secondary;
+    border-width: .01rem;
+
+    &:focus {
+        border-color: @primary;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.form-horizontal {
+    .form-group {
+        margin-left: -.15rem;
+        margin-right: -.15rem;
+
+        .form-control-static {
+            padding-top: .07rem;
+            padding-bottom: .07rem;
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: .15rem;
+
+    .control-label {
+        padding-top: .07rem;
+    }
+}
+
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group {
+    margin-right: -.01rem;
+}
+
+.input-group {
+    .input-group-btn {
+        > .btn {
+            height: .3rem;
+        }
+
+        &:first-child {
+            > .btn, > .btn-group {
+                margin-right: -.01rem;
+            }
+        }
+    }
+
+    .form-control {
+        height: .3rem;
+        font-size: .14rem;
+        border-color: @secondary;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+
+        &:focus {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background-color: @secondary + #222;
+        }
+    }
+}
+
+.modal-header .close {
+    margin-top: -.02rem;
+}
+
+.close {
+    font-size: .21rem;
+}
+
+.dropdown-menu {
+    min-width: 1.6rem;
+    padding: .05rem 0;
+    margin: .02rem 0 0;
+    font-size: .14rem;
+    border: .01rem solid #ccc;
+    border: .01rem solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 .06rem .12rem rgba(0,0,0,.175);
+    box-shadow: 0 .06rem .12rem rgba(0,0,0,.175);
+}
+
+.badge {
+    min-width: .1rem;
+    padding: .03rem .07rem;
+    font-size: .12rem;
+    border-radius: .1rem;
+}
+
+.btn {
+    padding: .06rem .12rem;
+    font-size: .14rem;
+    border: .01rem solid transparent;
+    border-radius: 1rem;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    padding: .01rem .05rem;
+    font-size: .12rem;
+    line-height: 1.5;
+}
+
+.btn-xs {
+    border-radius: 1rem;
+}
+
+.btn-group-xs > .btn {
+    border-radius: .03rem;
+}
+
+.media {
+    margin-top: .15rem;
+}
+
+.media-left, .media > .pull-left {
+    padding-right: .1rem;
+}
+
+.btn-group {
+    .btn {
+        &:hover, &:focus {
+            border-color: transparent;
+        }
+
+        &:active {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}

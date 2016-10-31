@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "注册完成，正在跳转…";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #footer.footer {
+        display: none;
+    }
+</style>
+<div class="signbar-wrap">
+    <div class="container ">
+        <div class="signbar">
+
+            <h2 class="text-center">
+                注册完成！
+            </h2>
+            <div class="step clearfix">
+                <div class="step-1 active">
+                    <div class="content ">注册账号</div>
+                </div>
+                <div class="step-2 active">
+                    <div class="content">完成</div>
+                </div>
+            </div>
+
+            <div class="alert alert-success text-center">
+                <h1><i class="glyphicon glyphicon-ok-circle"></i> </h1>
+                <h3>
+                    恭喜您！注册成功！
+                </h3>
+                <p class="pt10">
+                    已自动为您登录
+                </p>
+                <p>
+                    1秒后将为您跳转到首页……
+                </p>
+            </div>
+            <div class="text-center">
+                <a href="@Url.Action("Index","Home")" class="btn bg-secondary" title="直接返回首页"><i class="glyphicon glyphicon-home"></i> 直接返回首页</a>
+            </div>
+        </div>
+    </div>
+</div>

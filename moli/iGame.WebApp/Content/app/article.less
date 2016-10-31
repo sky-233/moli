@@ -1,0 +1,179 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-9 10:14:17
+    描述：文章首页，列表页
+*/
+
+
+@import "../module/_variable";
+.article {
+    padding-top: .2rem;
+
+    .item {
+        background-color: #f4f4f4;
+        border-radius: .04rem;
+        overflow: hidden;
+
+        + .item {
+            margin-top: .1rem;
+        }
+
+        .title {
+            padding: .1rem .05rem .05rem .05rem;
+        }
+
+
+        footer {
+            padding: .05rem;
+            background-color: #eee;
+            font-size: .12rem;
+
+            span {
+                + span {
+                    margin-left: .1rem;
+                }
+            }
+
+            color: #bbb;
+        }
+    }
+}
+
+.article-detail {
+    header {
+        padding: .05rem .15rem;
+        margin-bottom: .1rem;
+    }
+
+    .title {
+        padding: .05rem 0;
+    }
+
+    .info {
+        color: #bbb;
+        font-size: .12rem;
+        text-align: center;
+        padding-top: .05rem;
+        border-top: 1px solid #eee;
+
+        a {
+            color: @primary;
+        }
+
+        span {
+
+            + span {
+                margin-left: .1rem;
+            }
+        }
+    }
+
+    .content {
+        font-size: .14rem;
+    }
+
+    footer {
+        padding: .1rem 0;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            margin-right: .1rem;
+        }
+    }
+}
+/*分类*/
+.article-cate{
+    padding:0 .1rem;
+}
+.comments {
+    > header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: .05rem;
+    }
+
+    .item {
+        font-size: .12rem;
+
+        + .item {
+            border-top: .01rem dashed #ddd;
+            padding-top: .1rem;
+        }
+        .media-left{
+            a{
+                display:block;
+                img{
+                    width:.32rem;
+                    border-radius:.05rem;
+                }
+            }
+        }
+        .media-heading {
+            color: #bbb;
+        }
+
+        .datetime {
+            padding-top: .05rem;
+            color: #bbb;
+            text-align: right;
+
+            &:before {
+                content: "— — ";
+                margin-right: .1rem;
+            }
+    }
+
+        .quote {
+            margin-bottom: .1rem;
+            padding: .05rem .1rem;
+            border-radius: 5px;
+            background-color: #eee;
+            color: #bbb;
+
+            i {
+                color: #bbb;
+        }
+        }
+    }
+}
+
+.comment-form {
+    textarea {
+        width: 100%;
+        border: .01rem solid transparent;
+        background-color: #f2f2f2;
+        border-radius: .05rem .05rem 0 0;
+        padding: .05rem 10px;
+        font-size: .12rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .comment-from-control {
+        background-color: #eee;
+        border-radius: 0 0 .05rem .05rem;
+
+        button {
+            width: 30%;
+            border-radius: 0 0 .05rem 0;
+        }
+    }
+}
+
+
+.my-comment {
+    padding: .1rem 0;
+    margin-top: .2rem;
+    border-top: .01rem solid #ddd;
+    .media-left{
+        a{
+            display:block;
+            img{
+                width:.32rem;
+                border-radius:.05rem;
+            }
+        }
+    }
+}

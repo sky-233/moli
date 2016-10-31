@@ -1,0 +1,56 @@
+﻿/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-9-13 23:58:16
+    描述：导航模块，上导航和下导航
+*/
+
+
+/*顶部导航*/
+.navBar-top {
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom:.01rem solid #ddd;
+    i {
+        font-size: .2rem;
+    }
+
+    .logo {
+        display: inline-block;
+        height: .4rem;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+
+/*底部导航*/
+.navBar-bottom {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index:10;
+
+    > ul {
+        zoom: 1; //解决ie6/7兼容问题
+        &:after {
+            clear: both;
+            display: block;
+            visibility: hidden;
+            height: 0;
+            line-height: 0;
+            content: '';
+        }
+
+        > li {
+            float: left;
+        }
+    }
+}

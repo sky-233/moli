@@ -1,0 +1,318 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 15:23:47
+    描述：组件
+*/
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 22:12:09
+    描述：按钮
+*/
+
+@import "_button";
+@import "_input";
+
+.clearFix {
+    zoom: 1;
+
+    &:after {
+        clear: both;
+        display: block;
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+        content: '';
+    }
+}
+
+/* 按钮*/
+.btn {
+    &.btn-bordered {
+        border: 1px solid @base_light;
+    }
+}
+
+.grid-avg {
+    zoom: 1;
+    .clearFix;
+
+    > li {
+        float: left;
+    }
+
+    &[class*="grid-avg-"] > li {
+        padding: .05rem;
+
+        > a, > button {
+            padding-left: .05rem;
+            padding-right: .05rem;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &.grid-avg-2 > li {
+        width: 50%;
+    }
+
+    &.grid-avg-3 > li {
+        width: 33.33333333%;
+    }
+}
+
+.section-title {
+    padding: .05rem 0;
+    color: #aa9578;
+    border-bottom: 1px solid #ddc8ab;
+}
+
+.nav-tabs-justified {
+    > li {
+        border: 0;
+
+        &.active > a {
+            border: 0;
+            font-weight: bold;
+
+            &:focus, &:hover {
+                border: 0;
+            }
+        }
+
+        > a {
+            border: 0;
+            border-radius: 0;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &.nav-tabs-primary {
+        > li {
+            background-color: #11d9c2;
+
+            &.active > a {
+                background-color: #00c8b1;
+                color: #33fbe4;
+
+                &:focus, &:hover {
+                    background-color: #00c8b1;
+                    color: #33fbe4;
+                }
+            }
+
+            > a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.media {
+    .media-body {
+        .media-info {
+            color: #bbb;
+            font-size: 0.12rem;
+
+            span {
+                display: inline-block;
+
+                + span {
+                    margin-left: 0.1rem;
+                }
+            }
+
+            a {
+                color: #bbb;
+
+                &:active {
+                    color: #00c8b1;
+                }
+            }
+        }
+    }
+}
+
+.article-list {
+    li {
+        padding: .1rem 0;
+        border: 0;
+        border-radius: 0;
+
+        + li {
+            border-top: 1px dashed #ccc;
+        }
+
+        &.recommend {
+            a {
+                color: #d13939;
+                font-weight: bold;
+
+                i {
+                    display: inline-block;
+                }
+            }
+        }
+
+        a {
+            i {
+                display: none;
+            }
+        }
+    }
+}
+
+.badge-red {
+    background-color: transparent;
+    color: #f00;
+}
+
+.toggle-page {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    z-index: 101;
+    background-color: #fff;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+    &.toggle-hide {
+        -moz-transform: translateY(-200vh);
+        -ms-transform: translateY(-200vh);
+        -o-transform: translateY(-200vh);
+        -webkit-transform: translateY(-200vh);
+        transform: translateY(-200vh);
+    }
+
+}
+
+.nav-pills {
+    margin-top: .1rem;
+
+    > li {
+        > a {
+            padding-top: .05rem;
+            padding-bottom: .05rem;
+
+            &:focus, &:hover {
+                color: #b17a2d;
+                background-color: #e4c293;
+            }
+        }
+    }
+}
+
+
+//横向滚动的分类菜单
+/*
+<section class="page-category-wrap">
+<div class="page-category">
+    <ul class="page-category-nav clearfix">
+        <li> <a href="#" title="新手指引">新手指引</a> </li>
+        <li> <a href="#" title="生产相关">生产相关</a> </li>
+        <li> <a href="#" title="公式设定">公式设定</a> </li>
+        <li> <a href="#" title="经验分享">经验分享</a> </li>
+        <li> <a href="#" title="任务攻略">任务攻略</a> </li>
+        <li> <a href="#" title="剧情对话">剧情对话</a> </li>
+        <li> <a href="#" title="视频直播">视频直播</a> </li>
+        <li> <a href="#" title="资料收集">资料收集</a> </li>
+    </ul>
+</div>
+</section>
+
+*/
+.page-category-wrap {
+    overflow: hidden;
+    margin-bottom: .1rem;
+}
+
+.page-category {
+    overflow-x: auto;
+}
+
+.page-category-nav {
+    white-space: normal;
+    background-color: @primary;
+
+    > li {
+        float: left;
+
+        > a {
+            display: block;
+            padding: .1rem .05rem;
+            color: #fff;
+            font-size: .14rem;
+
+            &:active {
+                background-color: darken(@primary,10%);
+            }
+        }
+    }
+}
+
+/*包含加减按钮的输入框组件*/
+.input-group-tools {
+    .input-group-btn {
+        &:first-child {
+            > .btn {
+                border-radius: 10rem 0 0 10rem;
+            }
+        }
+
+        &:last-child {
+            > .btn {
+                border-radius: 0 10rem 10rem 0;
+            }
+        }
+
+        > .btn {
+            background-color: @secondary;
+            border: 0;
+            line-height: 1em;
+            color: #fff;
+            outline: none;
+
+            &:focus, &:hover {
+                outline: none;
+            }
+
+            &:active {
+                background-color: @secondary - #111;
+            }
+        }
+    }
+
+    input[type=number] {
+        border-color: @secondary;
+        padding-left: .05rem;
+        padding-right: .05rem;
+
+        &:focus {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
+
+/*模拟表格*/
+
+.list-justified {
+    display: table;
+    width: 100%;
+    position: relative;
+
+    > div, > span {
+        position: relative;
+        display: table-cell;
+    }
+}

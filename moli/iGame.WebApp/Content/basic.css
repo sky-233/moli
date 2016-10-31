@@ -1,0 +1,1505 @@
+﻿/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-19 16:04:11
+    描述：全局样式
+*/
+@import url('font-awesome.min.css');
+@import url('bootstrap.min.css');
+@import url('../plugins/swiper/swiper.css');
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-size: 12px;
+  font-size: .12rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: normal;
+}
+h1 {
+  font-size: 30px;
+  font-size: 0.3rem;
+}
+h2 {
+  font-size: 24px;
+  font-size: .24rem;
+}
+h3 {
+  font-size: 20px;
+  font-size: .2rem;
+}
+h4 {
+  font-size: 16px;
+  font-size: .16rem;
+}
+h5 {
+  font-size: 12px;
+  font-size: .12rem;
+}
+h6 {
+  font-size: 10px;
+  font-size: .1rem;
+}
+img {
+  border: 0;
+  border: none;
+}
+a {
+  color: #555;
+  text-decoration: none;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+a:hover,
+a:focus {
+  outline: none;
+  color: #2882ff;
+  text-decoration: none;
+}
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+button:focus {
+  outline: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  list-style-type: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+table td {
+  vertical-align: middle;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-19 01:00:32
+    描述：因bootstrap未使用rem，此文件重定义bootstrap的样式
+*/
+.container {
+  padding-right: .15rem;
+  padding-left: .15rem;
+}
+.row {
+  margin-left: -0.15rem;
+  margin-right: -0.15rem;
+}
+.row.row-fluid > [class*="col-"] {
+  padding: 0;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: .15rem;
+  padding-left: .15rem;
+}
+.form-control {
+  height: .3rem;
+  border-radius: .04rem;
+  font-size: .14rem;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #eed9bc;
+  border-width: .01rem;
+}
+.form-control:focus {
+  border-color: #00c8b1;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-horizontal .form-group {
+  margin-left: -0.15rem;
+  margin-right: -0.15rem;
+}
+.form-horizontal .form-group .form-control-static {
+  padding-top: .07rem;
+  padding-bottom: .07rem;
+}
+.form-group {
+  margin-bottom: .15rem;
+}
+.form-group .control-label {
+  padding-top: .07rem;
+}
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group {
+  margin-right: -0.01rem;
+}
+.input-group .input-group-btn > .btn {
+  height: .3rem;
+}
+.input-group .input-group-btn:first-child > .btn,
+.input-group .input-group-btn:first-child > .btn-group {
+  margin-right: -0.01rem;
+}
+.input-group .form-control {
+  height: .3rem;
+  font-size: .14rem;
+  border-color: #eed9bc;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.input-group .form-control:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #fffbde;
+}
+.modal-header .close {
+  margin-top: -0.02rem;
+}
+.close {
+  font-size: .21rem;
+}
+.dropdown-menu {
+  min-width: 1.6rem;
+  padding: .05rem 0;
+  margin: .02rem 0 0;
+  font-size: .14rem;
+  border: .01rem solid #ccc;
+  border: 0.01rem solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0.06rem 0.12rem rgba(0, 0, 0, 0.175);
+  box-shadow: 0 0.06rem 0.12rem rgba(0, 0, 0, 0.175);
+}
+.badge {
+  min-width: .1rem;
+  padding: .03rem .07rem;
+  font-size: .12rem;
+  border-radius: .1rem;
+}
+.btn {
+  padding: .06rem .12rem;
+  font-size: .14rem;
+  border: .01rem solid transparent;
+  border-radius: 1rem;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: .01rem .05rem;
+  font-size: .12rem;
+  line-height: 1.5;
+}
+.btn-xs {
+  border-radius: 1rem;
+}
+.btn-group-xs > .btn {
+  border-radius: .03rem;
+}
+.media {
+  margin-top: .15rem;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: .1rem;
+}
+.btn-group .btn:hover,
+.btn-group .btn:focus {
+  border-color: transparent;
+}
+.btn-group .btn:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 15:23:47
+    描述：组件
+*/
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 22:12:09
+    描述：按钮
+*/
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 22:12:09
+    描述：按钮
+*/
+a,
+button {
+  outline: none;
+}
+a:hover,
+button:hover,
+a:focus,
+button:focus {
+  color: #333333;
+}
+a:active,
+button:active {
+  color: #00c8b1;
+}
+a .fc-.gray:hover,
+button .fc-.gray:hover,
+a .fc-.gray:focus,
+button .fc-.gray:focus {
+  color: #333333;
+}
+a.bg-primary,
+button.bg-primary {
+  background-color: #00c8b1;
+  color: #fff;
+}
+a.bg-primary:hover,
+button.bg-primary:hover,
+a.bg-primary:focus,
+button.bg-primary:focus {
+  background-color: #00c8b1;
+  color: #fff;
+}
+a.bg-primary:active,
+button.bg-primary:active {
+  color: #006257;
+}
+a.bg-secondary,
+button.bg-secondary {
+  background-color: #eed9bc;
+  color: #cf9442;
+}
+a.bg-secondary:hover,
+button.bg-secondary:hover,
+a.bg-secondary:focus,
+button.bg-secondary:focus {
+  color: #cf9442;
+}
+a.bg-secondary:active,
+button.bg-secondary:active {
+  background-color: #ddc8ab;
+  color: #cf9442;
+}
+.btn-clear {
+  color: #b40000;
+}
+.btn-clear:focus,
+.btn-clear:hover {
+  color: #d80202;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-15 23:30:49
+    描述：input
+*/
+input {
+  padding: .05rem .07rem;
+}
+.clearFix {
+  zoom: 1;
+}
+.clearFix:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+/* 按钮*/
+.btn.btn-bordered {
+  border: 1px solid #555555;
+}
+.grid-avg {
+  zoom: 1;
+}
+.grid-avg:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+.grid-avg:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+.grid-avg > li {
+  float: left;
+}
+.grid-avg[class*="grid-avg-"] > li {
+  padding: .05rem;
+}
+.grid-avg[class*="grid-avg-"] > li > a,
+.grid-avg[class*="grid-avg-"] > li > button {
+  padding-left: .05rem;
+  padding-right: .05rem;
+  display: block;
+  text-align: center;
+}
+.grid-avg.grid-avg-2 > li {
+  width: 50%;
+}
+.grid-avg.grid-avg-3 > li {
+  width: 33.33333333%;
+}
+.section-title {
+  padding: .05rem 0;
+  color: #aa9578;
+  border-bottom: 1px solid #ddc8ab;
+}
+.nav-tabs-justified > li {
+  border: 0;
+}
+.nav-tabs-justified > li.active > a {
+  border: 0;
+  font-weight: bold;
+}
+.nav-tabs-justified > li.active > a:focus,
+.nav-tabs-justified > li.active > a:hover {
+  border: 0;
+}
+.nav-tabs-justified > li > a {
+  border: 0;
+  border-radius: 0;
+  display: block;
+  text-align: center;
+}
+.nav-tabs-justified.nav-tabs-primary > li {
+  background-color: #11d9c2;
+}
+.nav-tabs-justified.nav-tabs-primary > li.active > a {
+  background-color: #00c8b1;
+  color: #33fbe4;
+}
+.nav-tabs-justified.nav-tabs-primary > li.active > a:focus,
+.nav-tabs-justified.nav-tabs-primary > li.active > a:hover {
+  background-color: #00c8b1;
+  color: #33fbe4;
+}
+.nav-tabs-justified.nav-tabs-primary > li > a {
+  color: #fff;
+}
+.media .media-body .media-info {
+  color: #bbb;
+  font-size: 0.12rem;
+}
+.media .media-body .media-info span {
+  display: inline-block;
+}
+.media .media-body .media-info span + span {
+  margin-left: 0.1rem;
+}
+.media .media-body .media-info a {
+  color: #bbb;
+}
+.media .media-body .media-info a:active {
+  color: #00c8b1;
+}
+.article-list li {
+  padding: .1rem 0;
+  border: 0;
+  border-radius: 0;
+}
+.article-list li + li {
+  border-top: 1px dashed #ccc;
+}
+.article-list li.recommend a {
+  color: #d13939;
+  font-weight: bold;
+}
+.article-list li.recommend a i {
+  display: inline-block;
+}
+.article-list li a i {
+  display: none;
+}
+.badge-red {
+  background-color: transparent;
+  color: #f00;
+}
+.toggle-page {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  z-index: 101;
+  background-color: #fff;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.toggle-page.toggle-hide {
+  -moz-transform: translateY(-200vh);
+  -ms-transform: translateY(-200vh);
+  -o-transform: translateY(-200vh);
+  -webkit-transform: translateY(-200vh);
+  transform: translateY(-200vh);
+}
+.nav-pills {
+  margin-top: .1rem;
+}
+.nav-pills > li > a {
+  padding-top: .05rem;
+  padding-bottom: .05rem;
+}
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover {
+  color: #b17a2d;
+  background-color: #e4c293;
+}
+/*
+<section class="page-category-wrap">
+<div class="page-category">
+    <ul class="page-category-nav clearfix">
+        <li> <a href="#" title="新手指引">新手指引</a> </li>
+        <li> <a href="#" title="生产相关">生产相关</a> </li>
+        <li> <a href="#" title="公式设定">公式设定</a> </li>
+        <li> <a href="#" title="经验分享">经验分享</a> </li>
+        <li> <a href="#" title="任务攻略">任务攻略</a> </li>
+        <li> <a href="#" title="剧情对话">剧情对话</a> </li>
+        <li> <a href="#" title="视频直播">视频直播</a> </li>
+        <li> <a href="#" title="资料收集">资料收集</a> </li>
+    </ul>
+</div>
+</section>
+
+*/
+.page-category-wrap {
+  overflow: hidden;
+  margin-bottom: .1rem;
+}
+.page-category {
+  overflow-x: auto;
+}
+.page-category-nav {
+  white-space: normal;
+  background-color: #00c8b1;
+}
+.page-category-nav > li {
+  float: left;
+}
+.page-category-nav > li > a {
+  display: block;
+  padding: .1rem .05rem;
+  color: #fff;
+  font-size: .14rem;
+}
+.page-category-nav > li > a:active {
+  background-color: #009584;
+}
+/*包含加减按钮的输入框组件*/
+.input-group-tools .input-group-btn:first-child > .btn {
+  border-radius: 10rem 0 0 10rem;
+}
+.input-group-tools .input-group-btn:last-child > .btn {
+  border-radius: 0 10rem 10rem 0;
+}
+.input-group-tools .input-group-btn > .btn {
+  background-color: #eed9bc;
+  border: 0;
+  line-height: 1em;
+  color: #fff;
+  outline: none;
+}
+.input-group-tools .input-group-btn > .btn:focus,
+.input-group-tools .input-group-btn > .btn:hover {
+  outline: none;
+}
+.input-group-tools .input-group-btn > .btn:active {
+  background-color: #ddc8ab;
+}
+.input-group-tools input[type=number] {
+  border-color: #eed9bc;
+  padding-left: .05rem;
+  padding-right: .05rem;
+}
+.input-group-tools input[type=number]:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*模拟表格*/
+.list-justified {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+.list-justified > div,
+.list-justified > span {
+  position: relative;
+  display: table-cell;
+}
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-9-13 23:58:16
+    描述：导航模块，上导航和下导航
+*/
+/*顶部导航*/
+.navBar-top {
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: .01rem solid #ddd;
+}
+.navBar-top i {
+  font-size: .2rem;
+}
+.navBar-top .logo {
+  display: inline-block;
+  height: .4rem;
+}
+.navBar-top .logo img {
+  height: 100%;
+}
+/*底部导航*/
+.navBar-bottom {
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navBar-bottom > ul {
+  zoom: 1;
+}
+.navBar-bottom > ul:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+.navBar-bottom > ul > li {
+  float: left;
+}
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-9-14 00:00:10
+    描述：菜单，包括侧滑，显示隐藏的菜单
+*/
+.navMenu {
+  display: block;
+  position: fixed;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+.navMenu .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: .5;
+}
+.navMenu.active {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.navMenu-wrap {
+  padding: .1rem;
+  position: relative;
+  z-index: 999;
+  height: 100%;
+  width: 80vw;
+  background-color: #eed9bc;
+  overflow-y: auto;
+}
+/*
+    作者：vikingleo | http://code.vkleo.com | QQ:250511200
+    创建时间：2016-9-14 00:01:03
+    描述：网格，栅格
+*/
+.navMenu-nav-avg {
+  margin: 0.1rem -0.05rem 0 -0.05rem;
+}
+.navMenu-nav-avg li a {
+  border: 1px solid #333333;
+  font-size: .1rem;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-7-21 11:28:13
+    描述：仅用于layout的样式
+*/
+body {
+  font-family: 'Microsoft YaHei';
+}
+.sign-bar .avatar {
+  display: block;
+  border-radius: 5px;
+  border: 5px solid #fff;
+  background-color: #fff;
+}
+.sign-bar .avatar img {
+  width: 100%;
+  border-radius: 5px;
+}
+.footer {
+  margin-top: .2rem;
+  padding: .1rem 0;
+  color: #bbb;
+  font-size: .12rem;
+}
+.main {
+  padding-top: .1rem;
+}
+.gotop {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: .05rem;
+  bottom: .5rem;
+  width: .4rem;
+  height: .4rem;
+  line-height: .4rem;
+  font-size: .2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 100%;
+}
+.gotop:hover,
+.gotop:focus {
+  color: #fff;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-8 11:44:35
+    描述：首页样式
+*/
+.sliderbar img {
+  width: 100%;
+}
+.sliderbar .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+}
+.section-hot .tab-pane {
+  padding: .1rem;
+}
+.section-hot .media .media-left a {
+  display: block;
+}
+.section-hot .media .media-left a img {
+  width: .4rem;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-9 10:14:17
+    描述：文章首页，列表页
+*/
+.article {
+  padding-top: .2rem;
+}
+.article .item {
+  background-color: #f4f4f4;
+  border-radius: .04rem;
+  overflow: hidden;
+}
+.article .item + .item {
+  margin-top: .1rem;
+}
+.article .item .title {
+  padding: .1rem .05rem .05rem .05rem;
+}
+.article .item footer {
+  padding: .05rem;
+  background-color: #eee;
+  font-size: .12rem;
+  color: #bbb;
+}
+.article .item footer span + span {
+  margin-left: .1rem;
+}
+.article-detail header {
+  padding: .05rem .15rem;
+  margin-bottom: .1rem;
+}
+.article-detail .title {
+  padding: .05rem 0;
+}
+.article-detail .info {
+  color: #bbb;
+  font-size: .12rem;
+  text-align: center;
+  padding-top: .05rem;
+  border-top: 1px solid #eee;
+}
+.article-detail .info a {
+  color: #00c8b1;
+}
+.article-detail .info span + span {
+  margin-left: .1rem;
+}
+.article-detail .content {
+  font-size: .14rem;
+}
+.article-detail footer {
+  padding: .1rem 0;
+  text-align: center;
+}
+.article-detail footer a {
+  display: inline-block;
+  margin-right: .1rem;
+}
+/*分类*/
+.article-cate {
+  padding: 0 .1rem;
+}
+.comments > header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .05rem;
+}
+.comments .item {
+  font-size: .12rem;
+}
+.comments .item + .item {
+  border-top: .01rem dashed #ddd;
+  padding-top: .1rem;
+}
+.comments .item .media-left a {
+  display: block;
+}
+.comments .item .media-left a img {
+  width: .32rem;
+  border-radius: .05rem;
+}
+.comments .item .media-heading {
+  color: #bbb;
+}
+.comments .item .datetime {
+  padding-top: .05rem;
+  color: #bbb;
+  text-align: right;
+}
+.comments .item .datetime:before {
+  content: "— — ";
+  margin-right: .1rem;
+}
+.comments .item .quote {
+  margin-bottom: .1rem;
+  padding: .05rem .1rem;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #bbb;
+}
+.comments .item .quote i {
+  color: #bbb;
+}
+.comment-form textarea {
+  width: 100%;
+  border: .01rem solid transparent;
+  background-color: #f2f2f2;
+  border-radius: .05rem .05rem 0 0;
+  padding: .05rem 10px;
+  font-size: .12rem;
+}
+.comment-form textarea:focus {
+  outline: none;
+}
+.comment-form .comment-from-control {
+  background-color: #eee;
+  border-radius: 0 0 .05rem .05rem;
+}
+.comment-form .comment-from-control button {
+  width: 30%;
+  border-radius: 0 0 .05rem 0;
+}
+.my-comment {
+  padding: .1rem 0;
+  margin-top: .2rem;
+  border-top: .01rem solid #ddd;
+}
+.my-comment .media-left a {
+  display: block;
+}
+.my-comment .media-left a img {
+  width: .32rem;
+  border-radius: .05rem;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-10 17:12:57
+    描述：工具
+*/
+.analyzer input {
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+}
+.analyzer button:focus,
+.analyzer button:active {
+  outline: none;
+}
+.analyzer .analyzer-form .form-group .input-group-btn button {
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+.pet-info .media-right {
+  text-align: center;
+}
+.pet-info .media-right > a {
+  width: 1rem;
+  position: relative;
+  display: block;
+  text-align: center;
+  min-height: .5rem;
+  font-size: .5rem;
+  color: #00c8b1;
+}
+.pet-info .media-right > a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 1rem;
+}
+.pet-info .media-right p {
+  padding: .05rem 0;
+  color: #bbb;
+  font-size: .12rem;
+}
+.attrCount {
+  padding: .05rem 0;
+  background-color: #f2f2f2;
+}
+.tools-preview {
+  background-color: rgba(238, 217, 188, 0.8);
+  max-height: 2rem;
+}
+.analyzer-tab .analyzer-pagination,
+.analyzer-result .analyzer-pagination,
+.analyzer-tab .analyzer-result-pagination,
+.analyzer-result .analyzer-result-pagination {
+  width: 100%;
+}
+.analyzer-tab .analyzer-pagination .swiper-pagination-bullet,
+.analyzer-result .analyzer-pagination .swiper-pagination-bullet,
+.analyzer-tab .analyzer-result-pagination .swiper-pagination-bullet,
+.analyzer-result .analyzer-result-pagination .swiper-pagination-bullet {
+  margin: 0;
+  padding: .05rem 0;
+  width: 50%;
+  border-radius: 0;
+  text-align: center;
+  height: auto;
+  background-color: #eed9bc;
+  color: #fff;
+  opacity: 1;
+}
+.analyzer-tab .analyzer-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-result .analyzer-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-tab .analyzer-result-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.analyzer-result .analyzer-result-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ccb79a;
+  color: #fff;
+}
+/*底部菜单*/
+.navBar-tools li {
+  padding: .05rem .1rem;
+}
+.navBar-tools li > a {
+  display: block;
+  text-align: center;
+}
+/*算档器，选择宠物*/
+.select-pet-container {
+  height: 100%;
+}
+.select-pet-container .select-pet-cate {
+  width: 1rem;
+}
+.select-pet-container .select-pet-cate .btnClose {
+  background-color: #de9191;
+  color: #fff;
+}
+.select-pet-cate-list {
+  height: 100%;
+  overflow-y: auto;
+}
+.select-pet-cate-list > li {
+  height: .5rem;
+}
+.select-pet-cate-list > li + li > button {
+  border-top: 0.01rem solid #ccb79a;
+}
+.select-pet-cate-list > li > button {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #eed9bc;
+}
+.select-pet-cate-list > li > button.active {
+  background-color: #fff;
+}
+.select-pet-list .row {
+  padding-top: .05rem;
+  height: 100%;
+  overflow-y: auto;
+}
+.select-pet-list .col-xs-6 {
+  padding: .1rem;
+}
+.select-pet-list .col-xs-6 > a {
+  position: relative;
+  display: block;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.select-pet-list .col-xs-6 > a img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: .05rem;
+}
+.select-pet-list .col-xs-6 > a .select-pet-name {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .05rem;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  font-size: .1rem;
+  border-radius: 0 0 .05rem .05rem;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-10 10:24:04
+    描述：登录注册
+*/
+/*登录*/
+.sign-form {
+  padding-top: .2rem;
+}
+.signbar {
+  margin-top: .2rem;
+  padding: .3rem .15rem;
+  background-color: #ffffff;
+  border-radius: .05rem;
+}
+.signbar h2 {
+  color: #bbb;
+}
+.signbar .input-group-custom .input-group {
+  border-bottom: 0.02rem dashed #00c8b1;
+}
+.signbar .input-group-custom .input-group-addon {
+  padding: 0;
+  border-color: transparent;
+  background-color: transparent;
+  min-width: .3rem;
+  font-size: .2rem;
+  color: #00c8b1;
+  border-radius: 0;
+}
+.signbar .input-group-custom .input-group-addon .fa {
+  display: block;
+  line-height: 0;
+}
+.signbar .input-group-custom input {
+  background-color: transparent;
+  border: 0;
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  color: #333;
+  border-radius: 0;
+}
+.signbar .input-group-custom input:focus {
+  -moz-box-shadow: unset;
+  -webkit-box-shadow: unset;
+  box-shadow: unset;
+  background-color: #eeffff;
+  border-radius: .05rem .05rem 0 0 ;
+}
+.signbar .input-group-custom input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #bbb;
+}
+.signbar .input-group-custom input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #bbb;
+}
+.signbar .input-group-custom input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #bbb;
+}
+.signbar .input-group-custom input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #bbb;
+}
+/*注册*/
+.step {
+  padding: .2rem 0;
+}
+.step-1,
+.step-2 {
+  float: left;
+  width: 50%;
+  background-color: #ddd;
+  position: relative;
+  height: .02rem;
+}
+.step-1 .content,
+.step-2 .content {
+  padding: .02rem .05rem;
+  text-align: center;
+  position: absolute;
+  top: -0.1rem;
+  width: .7rem;
+  display: block;
+  background-color: #ddd;
+  border-radius: .05rem;
+  color: #bbb;
+}
+.step-1.active,
+.step-2.active {
+  background-color: #00c8b1;
+}
+.step-1.active .content,
+.step-2.active .content {
+  background-color: #00c8b1;
+  color: #fff;
+}
+.step-2 .content {
+  right: 0;
+}
+.third-login {
+  padding: .1rem 0;
+}
+.third-login a {
+  display: inline-block;
+  font-size: .2rem;
+  padding: .05rem .1rem;
+  border-radius: .05rem;
+}
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2016-8-19 10:49:57
+    描述：个人中心
+*/
+.my-header {
+  padding: .1rem;
+  background-color: #eed9bc;
+}
+.my-header .my-header-avatar a {
+  display: inline-block;
+  border: 0.01rem solid #ccb79a;
+  padding: .02rem;
+  border-radius: .05rem;
+}
+.my-header .my-header-avatar a img {
+  width: .6rem;
+  border-radius: .05rem;
+}
+.my-header .media-body .media-heading {
+  color: #998467;
+}
+.my-header .media-body .lv {
+  color: #aa9578;
+}
+.my-operation .btn {
+  border-radius: 0;
+  background-color: #ccb79a;
+  color: #fff;
+}
+.my-operation .btn:active {
+  background-color: #eed9bc;
+}
+.my-menu .grid-avg li {
+  padding: 0;
+  border-bottom: .01rem solid #ddd;
+  border-left: .01rem solid #ddd;
+}
+.my-menu .grid-avg li:nth-child(3n-2) {
+  border-left: 0;
+}
+.my-menu .grid-avg li a {
+  padding: 0;
+  height: 33.33333333vw;
+  line-height: 33.33333333vw;
+}
+.my-menu .grid-avg li a:active {
+  background-color: #eee;
+}
+.my-article-list .item {
+  padding: .1rem;
+  background-color: #f2f2f2;
+  border-radius: .04rem;
+}
+.my-article-list .item + .item {
+  margin-top: .1rem;
+}
+.clear {
+  clear: both;
+}
+.clearFix {
+  zoom: 1;
+}
+.clearFix:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  content: '';
+}
+.oyh {
+  overflow-y: hidden;
+}
+.db {
+  display: block;
+}
+.di {
+  display: inline;
+}
+.dib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.posa {
+  position: absolute;
+}
+.posr {
+  position: relative;
+}
+.p10 {
+  padding: .1rem;
+}
+.p15 {
+  padding: 0.15rem;
+}
+.p20 {
+  padding: 0.2rem;
+}
+.p25 {
+  padding: .25rem;
+}
+.p30 {
+  padding: .3rem;
+}
+.pt5 {
+  padding-top: .05rem;
+}
+.pt10 {
+  padding-top: .1rem;
+}
+.pt15 {
+  padding-top: 0.15rem;
+}
+.pt20 {
+  padding-top: 0.2rem;
+}
+.pt25 {
+  padding-top: .25rem;
+}
+.pt30 {
+  padding-top: .3rem;
+}
+.pr5 {
+  padding-right: .05rem;
+}
+.pr10 {
+  padding-right: .1rem;
+}
+.pr15 {
+  padding-right: 0.15rem;
+}
+.pr20 {
+  padding-right: 0.2rem;
+}
+.pr25 {
+  padding-right: .25rem;
+}
+.pr30 {
+  padding-right: .3rem;
+}
+.pb5 {
+  padding-bottom: .05rem;
+}
+.pb10 {
+  padding-bottom: .1rem;
+}
+.pb15 {
+  padding-bottom: 0.15rem;
+}
+.pb20 {
+  padding-bottom: 0.2rem;
+}
+.pb25 {
+  padding-bottom: .25rem;
+}
+.pb30 {
+  padding-bottom: .3rem;
+}
+.pl5 {
+  padding-left: .05rem;
+}
+.pl10 {
+  padding-left: .1rem;
+}
+.pl15 {
+  padding-left: 0.15rem;
+}
+.pl20 {
+  padding-left: 0.2rem;
+}
+.pl25 {
+  padding-left: .25rem;
+}
+.pl30 {
+  padding-left: .3rem;
+}
+.np {
+  padding: 0;
+}
+.npt {
+  padding-top: 0;
+}
+.npr {
+  padding-right: 0;
+}
+.npb {
+  padding-bottom: 0;
+}
+.npl {
+  padding-left: 0;
+}
+.nm {
+  margin: 0;
+}
+.nmt {
+  margin-top: 0;
+}
+.nmr {
+  margin-right: 0;
+}
+.nmb {
+  margin-bottom: 0;
+}
+.nml {
+  margin-left: 0;
+}
+.m10 {
+  margin: .1rem;
+}
+.m15 {
+  margin: .15rem;
+}
+.m20 {
+  margin: .2rem;
+}
+.m25 {
+  margin: .25rem;
+}
+.m30 {
+  margin: .3rem;
+}
+.mt10 {
+  margin-top: .1rem;
+}
+.mt15 {
+  margin-top: .15rem;
+}
+.mt20 {
+  margin-top: .2rem;
+}
+.mt25 {
+  margin-top: .25rem;
+}
+.mt30 {
+  margin-top: .3rem;
+}
+.mr10 {
+  margin-right: .1rem;
+}
+.mr15 {
+  margin-right: .15rem;
+}
+.mr20 {
+  margin-right: .2rem;
+}
+.mr25 {
+  margin-right: .25rem;
+}
+.mr30 {
+  margin-right: .3rem;
+}
+.mb10 {
+  margin-bottom: .1rem;
+}
+.mb15 {
+  margin-bottom: .15rem;
+}
+.mb20 {
+  margin-bottom: .2rem;
+}
+.mb25 {
+  margin-bottom: .25rem;
+}
+.mb30 {
+  margin-bottom: .3rem;
+}
+.ml10 {
+  margin-left: .1rem;
+}
+.ml15 {
+  margin-left: .15rem;
+}
+.ml20 {
+  margin-left: .2rem;
+}
+.ml25 {
+  margin-left: .25rem;
+}
+.ml30 {
+  margin-left: .3rem;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+.taj {
+  text-align: justify;
+}
+.toh {
+  overflow: hidden;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.fb {
+  font-weight: bold;
+}
+.ver-middle {
+  vertical-align: middle;
+}
+.ver-top {
+  vertical-align: top;
+}
+.ver-bottom {
+  vertical-align: bottom;
+}
+.fc-red {
+  color: red;
+}
+.fc-green {
+  color: #08ba07;
+}
+.fc-gray {
+  color: #bbb;
+}
+/*# sourceMappingURL=basic.css.map */

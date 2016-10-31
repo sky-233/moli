@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/basic.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/rem.js"></script>
+    <script src="~/plugins/swiper/swiper.jquery.min.js"></script>
+    <script src="~/plugins/layer/layer.js"></script>
+</head>
+<body class="pb30">
+    <nav class="navBar-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 pt10">
+                    @if (ViewBag.LeftTop == "goback")
+                    {
+                        <a href="javascript:history.go(-1);"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    }
+                    else if (ViewBag.LeftTop == "category")
+                    {
+                        <a href="javascript:;" data-togglebox="toggleCate" data-toggletype="page"><i class="fa fa-th-list"></i></a>
+                    }
+                    else if (ViewBag.LeftTop == "tools")
+                    {
+                        <a href="javascript:;" data-togglebox="toolsResult" data-toggletype="page"><i class="fa fa-eye"></i></a>
+                    }
+                    else if (ViewBag.LeftTop == "home" || ViewBag.LeftTop == null)
+                    {
+                        <a href="@Url.Action("Aboutus","Home")"><i class="fa fa-info"></i></a>
+                    }
+
+                </div>
+                <div class="col-xs-6 text-center">
+                    @if (ViewBag.PageName != null)
+                    {
+                        <div class="pt10">@ViewBag.PageName</div>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Index","Home")" class="logo">
+                            <img src="~/Content/images/basic/logo.png" />
+                        </a>
+                    }
+                </div>
+                <div class="col-xs-3 pt10">
+                    <div class=" text-right">
+                        <a href="javascript:;" data-menu="#navMenu"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+                    </div>
+                    <div id="navMenu" class="navMenu">
+                        <div class="navMenu-wrap">
+                            <section class="row sign-bar">
+                                <div class="sign-after">
+                                    <div class="col-sm-6 col-xs-6 "><a href="#" class="btn btn-block btn-primary">注册</a></div>
+                                    <div class="col-sm-6 col-xs-6 "><a href="#" class="btn btn-block btn-success">登录</a></div>
+                                </div>
+                            </section>
+                            <section class="pt15 pb15">
+                                <h4 class="section-title">
+                                    快捷工具
+                                </h4>
+                                <ul class="grid-avg grid-avg-3 navMenu-nav-avg">
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">新手指南</a></li>
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">练级指南</a></li>
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">宠物模拟器</a></li>
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">宠物算档器</a></li>
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">装备模拟器</a></li>
+                                    <li><a href="@Url.Action("Analyzer", "Tools")" class="btn">任务指引</a></li>
+                                </ul>
+                            </section>
+                            <section class="nav-menu">
+                                <h4 class="section-title">
+                                    导航
+                                </h4>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li> <a href="@Url.Action("Analyzer","Tools")" title="新手必读">新手必读</a> </li>
+                                    <li> <a href="@Url.Action("Index","Notice")" title="新闻公告">新闻公告</a> </li>
+                                    <li> <a href="@Url.Action("Analyzer","Tools")" title="防骗指南">防骗指南</a> </li>
+                                    <li> <a href="@Url.Action("Index","Article")" title="文章攻略">文章攻略</a> </li>
+                                    <li> <a href="@Url.Action("Index","Trading")" title="魔力交易所">魔力交易所</a> </li>
+                                    <li> <a href="javascript:;" id="nav-menu-ginfo" title="游戏资料">游戏资料</a> </li>
+                                    <li> <a href="@Url.Action("Analyzer","Tools")" title="任务大全">任务大全</a> </li>
+                                    <li> <a href="@Url.Action("Index","Database")" title="数据库">数据库</a> </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        @RenderBody()
+    </div>
+    @*<footer id="footer" class="footer">
+        <p class="text-center">
+            &copy; 2016 艾斯创网络科技有限公司. All Right Reserved.
+        </p>
+        <p class="text-center">
+            ICP备案：<a href="http://www.miibeian.gov.cn/">桂ICP备14005763号-6</a>
+        </p>
+        <p class="text-center">
+            合作联系：123-8043-1234
+        </p>
+    </footer>*@
+    <a href="javascript:;" id="gotop" class="gotop"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/app/layout.js"></script>
+</body>
+</html>
